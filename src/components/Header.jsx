@@ -1,5 +1,12 @@
 import React from "react";
+import Navbar from "./Navbar";
 
-function Header() {}
+function Header() {
+  return (
+    <header>
+      <Navbar />
+    </header>
+  );
+}
 
 export default Header;
