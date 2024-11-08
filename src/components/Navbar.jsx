@@ -2,9 +2,13 @@ import React from "react";
 
 function Navbar() {
   return (
-    <nav className="flex flex-direction: row">
-      <ul>
-        <img src="/assets/images/TeraElectricalServicesLogo.png" alt="" />
+    <nav className="flex flex-row">
+      <ul className="flex space-x-4">
+        <img
+          className="min-w-max"
+          src="/assets/images/TeraElectricalServicesLogo.png"
+          alt=""
+        />
         <li>Home</li>
         <li>About</li>
         <li>Services</li>
