@@ -3,7 +3,11 @@ import Navbar from "./Navbar";
 
 function Header() {
   return (
-    <header>
+    <header className="w-full h-8">
+      <img
+        className="h-full"
+        src="/assets/images/TeraElectricalServicesLogo.png"
+      ></img>
       <Navbar />
     </header>
   );
