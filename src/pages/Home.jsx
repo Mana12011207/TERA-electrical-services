@@ -4,7 +4,7 @@ import BaseLayout from "../components/BaseLayout";
 function Home() {
   return (
     <BaseLayout>
-      <div>ホームページ</div>
+      <div>Home</div>
     </BaseLayout>
   );
 }
