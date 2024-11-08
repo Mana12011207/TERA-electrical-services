@@ -1,6 +1,12 @@
 import React from "react";
-import Header from "../components/Header";
+import BaseLayout from "../components/BaseLayout";
 
-function Home() {}
+function Home() {
+  return (
+    <BaseLayout>
+      <div>ホームページ</div>
+    </BaseLayout>
+  );
+}
 
 export default Home;
