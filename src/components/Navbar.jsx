@@ -3,7 +3,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
   return (
-    <nav className="flex justify-between items-center w-full px-4 bg-secondaryPrimary-default">
+    <nav className="flex justify-between items-center w-full pt-2 px-4">
       <img
         className="max-h-8"
         src="/assets/images/TeraElectricalServicesLogo.png"
