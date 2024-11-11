@@ -1,7 +1,14 @@
 import React from "react";
+import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 
 function Navbar() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  const openHamburgerMenue = () => {
+    console.log("メニューを開きました");
+  };
+
   return (
     <nav className="flex justify-between items-center w-full pt-2 px-4">
       <img
@@ -9,7 +16,9 @@ function Navbar() {
         src="/assets/images/TeraElectricalServicesLogo.png"
         alt="logo"
       ></img>
-      <GiHamburgerMenu className="text-xl" />
+      <button onClick={openHamburgerMenue}>
+        <GiHamburgerMenu className="text-xl" />
+      </button>
     </nav>
   );
 }
