@@ -5,7 +5,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
 
-  const openHamburgerMenue = () => {
+  const toggleHamburgerMenue = () => {
     setIsVisible(!isVisible);
     console.log("メニューを開きました");
   };
@@ -18,12 +18,12 @@ function Navbar() {
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
-        <button onClick={openHamburgerMenue}>
+        <button onClick={toggleHamburgerMenue}>
           <GiHamburgerMenu className="text-xl" />
         </button>
         {isVisible && (
           <nav>
-            <ul>
+            <ul className="bg-red-100">
               <li>Home</li>
               <li>Services</li>
               <li>About</li>
