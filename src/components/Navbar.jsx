@@ -12,18 +12,18 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex justify-between items-center w-full pt-2 px-4">
+      <div className="flex justify-between items-center w-full pt-2 px-4 ">
         <img
           className="max-h-8"
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
         <button onClick={toggleHamburgerMenue}>
-          <GiHamburgerMenu className="text-xl" />
+          <GiHamburgerMenu className="text-xl " />
         </button>
         {isVisible && (
-          <nav>
-            <ul className="bg-red-100">
+          <nav className="fixed bg-red-100 left-0 top-0 w-full py-8 pl-5">
+            <ul className="space-y-2">
               <li>Home</li>
               <li>Services</li>
               <li>About</li>
