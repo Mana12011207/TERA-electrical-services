@@ -13,12 +13,16 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex justify-between items-center w-full pt-2 px-4 relative">
+      <div className="flex justify-between items-center w-full pt-3 px-4 relative">
         <button
-          className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointer"
+          className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointe z-10"
           onClick={toggleHamburgerMenue}
         >
-          {isVisible ? <GrFormClose /> : <GiHamburgerMenu />}
+          {isVisible ? (
+            <GrFormClose className="text-lg" />
+          ) : (
+            <GiHamburgerMenu />
+          )}
         </button>
         <img
           className="max-h-8"
@@ -27,11 +31,11 @@ function Navbar() {
         ></img>
       </div>
       <div
-        className={`fixed top-0 left-0 w-full bg-primary-default bg-opacity-50 py-8 pl-5 transform transition-transform duration-300 ${
+        className={`fixed top-0 left-0 w-full bg-primary-default py-8 pl-5 transform transition-transform duration-300 ${
           isVisible ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <nav>
+        <nav className="pt-8">
           <ul className="space-y-2 cursor-pointer">
             <li>
               <a href="/" className="hover:text-secondaryPrimary-default ">
