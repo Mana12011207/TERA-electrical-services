@@ -22,23 +22,40 @@ function Navbar() {
         <button onClick={toggleHamburgerMenue}>
           <GiHamburgerMenu className="text-xl " />
         </button>
-        {isVisible && (
-          <div className="fixed top-0 left-0 bg-red-100   w-full py-8 pl-5 transform transition-transform duration-300 ${isVisible ? 'translate-x-0' :">
-            <nav>
-              <button onClick={toggleHamburgerMenue}>
-                <IoMdClose className="text-xl" />
-              </button>
-              <ul className="space-y-2">
-                <li>Home</li>
-                <li>Services</li>
-                <li>About</li>
-                <li>Contact</li>
-              </ul>
-            </nav>
-          </div>
-        )}
       </div>
-      <nav></nav>
+      <div
+        className={`fixed top-0 left-0 w-full bg-red-100 py-8 pl-5 transform transition-transform duration-300 ${
+          isVisible ? "translate-x-0" : "-translate-x-full"
+        }`}
+      >
+        <nav>
+          <button onClick={toggleHamburgerMenue} className="text-xl mb-4">
+            <IoMdClose />
+          </button>
+          <ul className="space-y-2">
+            <li>
+              <a href="#home" className="hover:text-blue-500">
+                Home
+              </a>
+            </li>{" "}
+            <li>
+              <a href="#services" className="hover:text-blue-500">
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="#about" className="hover:text-blue-500">
+                About
+              </a>
+            </li>
+            <li>
+              <a href="#contact" className="hover:text-blue-500">
+                Contact
+              </a>
+            </li>{" "}
+          </ul>{" "}
+        </nav>
+      </div>
     </>
   );
 }
