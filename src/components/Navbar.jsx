@@ -29,7 +29,28 @@ function Navbar() {
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
+        {/* Horizontal menu for larger screens */}{" "}
+        <nav className="hidden sm:flex space-x-6">
+          {" "}
+          <a href="/" className="hover:text-secondaryPrimary-default">
+            {" "}
+            Home{" "}
+          </a>{" "}
+          <a href="/services" className="hover:text-secondaryPrimary-default">
+            {" "}
+            Services{" "}
+          </a>{" "}
+          <a href="/about" className="hover:text-secondaryPrimary-default">
+            {" "}
+            About{" "}
+          </a>{" "}
+          <a href="/contact" className="hover:text-secondaryPrimary-default">
+            {" "}
+            Contact{" "}
+          </a>{" "}
+        </nav>{" "}
       </div>
+
       <div
         className={`fixed top-0 left-0 w-full bg-primary-default py-8 pl-5 transform transition-transform duration-300 ${
           isVisible ? "translate-x-0" : "-translate-x-full"
