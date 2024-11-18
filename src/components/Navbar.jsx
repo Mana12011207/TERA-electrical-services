@@ -15,7 +15,7 @@ function Navbar() {
     <>
       <div className="flex justify-between items-center w-full pt-3 px-4 relative">
         <button
-          className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointe z-10"
+          className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointe z-10 sm:hidden"
           onClick={toggleHamburgerMenue}
         >
           {isVisible ? (
@@ -29,35 +29,15 @@ function Navbar() {
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
-        {/* Horizontal menu for larger screens */}{" "}
-        <nav className="hidden sm:flex space-x-6">
-          {" "}
-          <a href="/" className="hover:text-secondaryPrimary-default">
-            {" "}
-            Home{" "}
-          </a>{" "}
-          <a href="/services" className="hover:text-secondaryPrimary-default">
-            {" "}
-            Services{" "}
-          </a>{" "}
-          <a href="/about" className="hover:text-secondaryPrimary-default">
-            {" "}
-            About{" "}
-          </a>{" "}
-          <a href="/contact" className="hover:text-secondaryPrimary-default">
-            {" "}
-            Contact{" "}
-          </a>{" "}
-        </nav>{" "}
       </div>
 
       <div
-        className={`fixed top-0 left-0 w-full bg-primary-default py-8 pl-5 transform transition-transform duration-300 ${
-          isVisible ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed sm:relative top-0 left-0 w-full sm:w-auto bg-primary-default sm:bg-secondaryPrimary-default py-8 sm:py-0 sm:pl-0 pl-5 transform transition-transform duration-300 ${
+          isVisible ? "translate-x-0" : "-translate-x-full sm:translate-x-0"
+        } sm:flex sm:justify-center`}
       >
-        <nav className="pt-8">
-          <ul className="space-y-2 cursor-pointer">
+        <nav className="pt-8 sm:py-0">
+          <ul className="space-y-2 cursor-pointer sm: sm:space-y-0 sm:flex sm:space-x-14 sm:text-2xl">
             <li>
               <a href="/" className="hover:text-secondaryPrimary-default ">
                 Home
@@ -83,8 +63,8 @@ function Navbar() {
               >
                 Contact
               </a>
-            </li>{" "}
-          </ul>{" "}
+            </li>
+          </ul>
         </nav>
       </div>
     </>
