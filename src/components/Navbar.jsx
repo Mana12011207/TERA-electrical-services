@@ -4,10 +4,10 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { GrFormClose } from "react-icons/gr";
 
 function Navbar() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleHamburgerMenu = () => {
-    setIsVisible(!isVisible);
+    setIsMenuOpen(!isMenuOpen);
     console.log("メニューを開きました");
   };
 
@@ -18,7 +18,7 @@ function Navbar() {
           className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointer z-10 sm:hidden"
           onClick={toggleHamburgerMenu}
         >
-          {isVisible ? (
+          {isMenuOpen ? (
             <GrFormClose className="text-lg" />
           ) : (
             <GiHamburgerMenu />
@@ -29,6 +29,7 @@ function Navbar() {
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
+
         {/* Horizontal Menu for larger screens */}
         <nav className="pt-8 hidden sm:block">
           <ul className="cursor-pointer flex justify-between space-x-6">
@@ -65,7 +66,7 @@ function Navbar() {
       {/* Mobile menu */}
       <div
         className={`fixed top-0 left-0 w-full bg-primary-default py-8 pl-5 transform transition-transform duration-300 ${
-          isVisible ? "translate-x-0" : "-translate-x-full"
+          isMenuOpen ? "translate-x-0" : "-translate-x-full"
         } `}
       >
         <nav className="pt-8">
