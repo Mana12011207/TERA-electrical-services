@@ -6,7 +6,7 @@ import { GrFormClose } from "react-icons/gr";
 function Navbar() {
   const [isVisible, setIsVisible] = useState(false);
 
-  const toggleHamburgerMenue = () => {
+  const toggleHamburgerMenu = () => {
     setIsVisible(!isVisible);
     console.log("メニューを開きました");
   };
@@ -15,8 +15,8 @@ function Navbar() {
     <>
       <div className="flex justify-between items-center w-full pt-3 px-4 relative">
         <button
-          className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointe z-10 sm:hidden"
-          onClick={toggleHamburgerMenue}
+          className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointer z-10 sm:hidden"
+          onClick={toggleHamburgerMenu}
         >
           {isVisible ? (
             <GrFormClose className="text-lg" />
@@ -29,15 +29,47 @@ function Navbar() {
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
+        {/* Horizontal Menu for larger screens */}
+        <nav className="pt-8 hidden sm:block">
+          <ul className="cursor-pointer flex justify-between space-x-6">
+            <li>
+              <a href="/" className="hover:text-secondaryPrimary-default ">
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/services"
+                className="hover:text-secondaryPrimary-default "
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <a href="/about" className="hover:text-secondaryPrimary-default">
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contact"
+                className="hover:text-secondaryPrimary-default "
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
 
+      {/* Mobile menu */}
       <div
-        className={`fixed sm:relative top-0 left-0 w-full sm:w-auto bg-primary-default sm:bg-secondaryPrimary-default py-8 sm:py-0 sm:pl-0 pl-5 transform transition-transform duration-300 ${
-          isVisible ? "translate-x-0" : "-translate-x-full sm:translate-x-0"
-        } sm:flex sm:justify-center`}
+        className={`fixed top-0 left-0 w-full bg-primary-default py-8 pl-5 transform transition-transform duration-300 ${
+          isVisible ? "translate-x-0" : "-translate-x-full"
+        } `}
       >
-        <nav className="pt-8 sm:py-0">
-          <ul className="space-y-2 cursor-pointer sm: sm:space-y-0 sm:flex sm:space-x-14 sm:text-2xl">
+        <nav className="pt-8">
+          <ul className="space-y-2 cursor-pointer">
             <li>
               <a href="/" className="hover:text-secondaryPrimary-default ">
                 Home
