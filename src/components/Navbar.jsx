@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex justify-between items-center w-full pt-3 px-4 relative">
+      <div className="flex justify-between items-center w-full h-full pt-3 px-4 relative sm:items-end">
         <button
           className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointer z-10 sm:hidden"
           onClick={toggleHamburgerMenu}
@@ -25,39 +25,25 @@ function Navbar() {
           )}
         </button>
         <img
-          className="max-h-8"
+          className="max-h-8 sm:max-h-full sm:pb-4"
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
 
         {/* Horizontal Menu for larger screens */}
-        <nav className="pt-8 hidden sm:block">
-          <ul className="cursor-pointer flex justify-between space-x-6">
-            <li>
-              <a href="/" className="hover:text-secondaryPrimary-default ">
-                Home
-              </a>
+        <nav className="hidden  sm:flex sm:justify-between sm:grow sm:pb-4">
+          <ul className="flex justify-center grow cursor-pointer 2xl:text-2xl">
+            <li className="grow text-center">
+              <a href="/">Home</a>
             </li>
-            <li>
-              <a
-                href="/services"
-                className="hover:text-secondaryPrimary-default "
-              >
-                Services
-              </a>
+            <li className="grow text-center">
+              <a href="/services">Services</a>
             </li>
-            <li>
-              <a href="/about" className="hover:text-secondaryPrimary-default">
-                About
-              </a>
+            <li className="grow text-center">
+              <a href="/about">About</a>
             </li>
-            <li>
-              <a
-                href="/contact"
-                className="hover:text-secondaryPrimary-default "
-              >
-                Contact
-              </a>
+            <li className="grow text-center">
+              <a href="/contact">Contact</a>
             </li>
           </ul>
         </nav>
@@ -72,7 +58,7 @@ function Navbar() {
         <nav className="pt-8">
           <ul className="space-y-2 cursor-pointer">
             <li>
-              <a href="/" className="hover:text-secondaryPrimary-default ">
+              <a href="/" className="hover:text-secondaryPrimary-default">
                 Home
               </a>
             </li>
