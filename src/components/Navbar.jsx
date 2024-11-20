@@ -13,9 +13,9 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex justify-between w-full h-full sm:border sm:border-blue-500">
+      <div className="flex justify-between w-full h-full">
         <button
-          className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointer z-10 sm:hidden"
+          className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointer z-10 md:hidden"
           onClick={toggleHamburgerMenu}
         >
           {isMenuOpen ? (
@@ -25,15 +25,15 @@ function Navbar() {
           )}
         </button>
         <img
-          className="max-h-8  sm:pb-4"
+          className="max-h-8 md:max-h-36 w-auto h-auto md:ml-8 md:mt-2 lg:ml-32"
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
 
         {/* Horizontal Menu for larger screens */}
-        <div className="flex sm:border sm:border-green-500">
-          <nav className="hidden  sm:flex sm:pb-4">
-            <ul className="flex cursor-pointer sm:text-sm sm:border sm:border-pink-500 2xl:text-2xl">
+        <div className="hidden md:flex sm:border sm:border-green-500">
+          <nav className="w-auto md:flex  md:items-end md:justify-around sm:border  md:border-pink-500">
+            <ul className="flex cursor-pointer md:text-sm  2xl:text-2xl">
               <li className="">
                 <a href="/">Home</a>
               </li>
@@ -50,7 +50,7 @@ function Navbar() {
           </nav>
         </div>
         {/* CTA button */}
-        <button className="hidden sm:flex rounded-lg pr-10 text-center bg-secondaryAcctent">
+        <button className="hidden md:max-h-36 w-auto h-auto md:flex mr-8 mt-2 lg:mr-32 py-2 px-6 md:py-3 md:px-8 rounded-lg bg-secondaryAccent items-center">
           Call Now
         </button>
       </div>

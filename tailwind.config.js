@@ -13,7 +13,7 @@ module.exports = {
         accent: {
           default: "#f26419",
         },
-        secondaryAcctent: {
+        secondaryAccent: {
           DEFAULT: "#f6a02d",
         },
       },
