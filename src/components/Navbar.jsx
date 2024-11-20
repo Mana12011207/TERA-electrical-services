@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="flex justify-between items-center w-full h-full pt-3 px-4 relative sm:items-end">
+      <div className="flex justify-between w-full h-full sm:border sm:border-blue-500">
         <button
           className="w-8 h-8  bg-white  bg-opacity-40 rounded-full justify-items-center cursor-pointer z-10 sm:hidden"
           onClick={toggleHamburgerMenu}
@@ -25,28 +25,34 @@ function Navbar() {
           )}
         </button>
         <img
-          className="max-h-8 sm:max-h-full sm:pb-4"
+          className="max-h-8  sm:pb-4"
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
 
         {/* Horizontal Menu for larger screens */}
-        <nav className="hidden  sm:flex sm:justify-between sm:grow sm:pb-4">
-          <ul className="flex justify-center grow cursor-pointer 2xl:text-2xl">
-            <li className="grow text-center">
-              <a href="/">Home</a>
-            </li>
-            <li className="grow text-center">
-              <a href="/services">Services</a>
-            </li>
-            <li className="grow text-center">
-              <a href="/about">About</a>
-            </li>
-            <li className="grow text-center">
-              <a href="/contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
+        <div className="flex sm:border sm:border-green-500">
+          <nav className="hidden  sm:flex sm:pb-4">
+            <ul className="flex cursor-pointer sm:text-sm sm:border sm:border-pink-500 2xl:text-2xl">
+              <li className="">
+                <a href="/">Home</a>
+              </li>
+              <li className="">
+                <a href="/services">Services</a>
+              </li>
+              <li className="">
+                <a href="/about">About</a>
+              </li>
+              <li className="">
+                <a href="/contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        {/* CTA button */}
+        <button className="hidden sm:flex rounded-lg pr-10 text-center bg-secondaryAcctent">
+          Call Now
+        </button>
       </div>
 
       {/* Mobile menu */}
