@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { GrFormClose } from "react-icons/gr";
+import { LuPhoneCall } from "react-icons/lu";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,15 +26,15 @@ function Navbar() {
           )}
         </button>
         <img
-          className="w-auto h-auto max-h-8 md:max-h-36 md:ml-8 md:mt-2 lg:ml-32"
+          className="w-auto h-auto max-h-8 md:max-h-36"
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
 
         {/* Horizontal Menu for larger screens */}
-        <div className="hidden md:flex sm:border sm:border-green-500">
-          <nav className="w-auto md:flex md:items-end md:justify-around sm:border md:border-pink-500">
-            <ul className="flex cursor-pointer md:text-sm 2xl:text-2xl">
+        <div className="hidden md:flex ">
+          <nav className="w-auto md:flex md:items-end">
+            <ul className="flex space-x-10 cursor-pointer sm:text-sm md:text-xl xl:text-2xl">
               <li className="">
                 <a href="/">Home</a>
               </li>
@@ -50,8 +51,9 @@ function Navbar() {
           </nav>
         </div>
         {/* CTA button */}
-        <button className="items-center hidden w-auto h-auto px-6 py-2 mt-2 mr-8 rounded-lg md:max-h-36 md:flex lg:mr-32 md:py-3 md:px-8 bg-secondaryAccent">
-          Call Now
+        <button className="items-center hidden w-auto h-auto font-bold rounded-lg md:max-h-36 md:flex bg-secondaryAccent">
+          <LuPhoneCall />
+          <a href="tel:+61411367347"> Call Now</a>
         </button>
       </div>
 

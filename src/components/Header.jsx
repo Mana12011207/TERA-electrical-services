@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 function Header() {
   return (
-    <header className="min-w-full h-12 md:h-40 bg-secondaryPrimary-default">
+    <header className="h-12 min-w-full md:h-40 bg-secondaryPrimary-default">
       <Navbar />
     </header>
   );
