@@ -16,7 +16,7 @@ function Navbar() {
     <>
       <div className="flex justify-between w-full h-full">
         <button
-          className="z-10 w-8 h-8 bg-white rounded-full cursor-pointer bg-opacity-40 justify-items-center md:hidden"
+          className="z-10 w-8 h-8 mt-2 ml-2 bg-white rounded-full cursor-pointer bg-opacity-40 justify-items-center md:hidden"
           onClick={toggleHamburgerMenu}
         >
           {isMenuOpen ? (
@@ -26,14 +26,14 @@ function Navbar() {
           )}
         </button>
         <img
-          className="w-auto h-auto max-h-8 md:max-h-36"
+          className="box-border w-auto h-auto mt-2 mr-2 max-h-8 sm:max-h-36"
           src="/assets/images/TeraElectricalServicesLogo.png"
           alt="logo"
         ></img>
 
         {/* Horizontal Menu for larger screens */}
-        <div className="hidden md:flex ">
-          <nav className="w-auto md:flex md:items-end">
+        <div className="hidden md:flex">
+          <nav className="w-auto border border-yellow-500 tems-center md:flex md:items-end">
             <ul className="flex space-x-10 cursor-pointer sm:text-sm md:text-xl xl:text-2xl">
               <li className="">
                 <a href="/">Home</a>
@@ -51,7 +51,7 @@ function Navbar() {
           </nav>
         </div>
         {/* CTA button */}
-        <button className="items-center hidden w-auto h-auto font-bold rounded-lg md:max-h-36 md:flex bg-secondaryAccent">
+        <button className="box-border items-center hidden w-auto h-auto font-bold rounded-lg md:max-h-36 md:flex bg-secondaryAccent">
           <LuPhoneCall />
           <a href="tel:+61411367347"> Call Now</a>
         </button>
