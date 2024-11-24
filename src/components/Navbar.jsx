@@ -26,14 +26,14 @@ function Navbar() {
           )}
         </button>
         <img
-          className="box-border w-auto h-auto mt-2 ml-2 max-h-8 sm:max-h-36 xl:ml-24"
-          src="/assets/images/TeraElectricalServicesLogo.png"
+          className="box-border w-auto h-auto mt-2 ml-2 max-h-8 sm:max-h-36 xl:ml-32"
+          src="assets/images/Tera-electrical-services.png"
           alt="logo"
         ></img>
 
         {/* Horizontal Menu for larger screens */}
         <div className="hidden md:flex">
-          <nav className="w-auto border border-yellow-500 md:flex md:items-end md:mx-2">
+          <nav className="w-auto md:flex md:items-end md:mx-2">
             <ul className="flex space-x-10 cursor-pointer sm:text-sm lg:text-xl xl:text-2xl">
               <li className="">
                 <a href="/">Home</a>
@@ -51,11 +51,11 @@ function Navbar() {
           </nav>
         </div>
         {/* CTA button */}
-        <button className="box-border flex-col hidden h-auto mt-2 mr-2 font-bold rounded-lg md:flex -auto items-ce md:max-h-36 bg-secondaryAccent xl:mr-24 ">
+        <button className="box-border flex-col items-center hidden h-auto mt-2 mr-2 font-bold rounded-lg md:flex -auto md:max-h-36 bg-secondaryAccent xl:mr-32 2xl:h-auto 2xl:w-80">
           <div className="p-4">
             <span className="border border-red-500">Call Now</span>
             <div className="flex items-center">
-              <LuPhoneCall className="mr-2" />
+              <LuPhoneCall className="mr-2 text-lg font-bold" />
               <a href="tel:+61411367347">411 367 347</a>
             </div>
           </div>
@@ -69,7 +69,7 @@ function Navbar() {
         } `}
       >
         <nav className="pt-8">
-          <ul className="space-y-2 cursor-pointer">
+          <ul className="space-y-2 font-bold cursor-pointer">
             <li>
               <a href="/" className="hover:text-secondaryPrimary-default">
                 Home
