@@ -32,7 +32,7 @@ function Navbar() {
         <img
           className="box-border w-auto h-auto max-h-8 lg:col-span-1"
           src="assets/images/TeraElectricalServices.png"
-          alt="logo"
+          alt="Company logo"
         ></img>
 
         {/* Horizontal Menu for larger screens */}
