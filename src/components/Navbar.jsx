@@ -56,7 +56,7 @@ function Navbar() {
         </div>
 
         {/* CTA button */}
-        <button className="box-border flex-col items-center hidden w-auto h-auto font-bold rounded-lg lg:flex bg-secondaryAccent">
+        <button className="box-border flex-col items-center hidden w-auto h-auto font-bold rounded-lg lg:flex bg-accent">
           <div className="p-4">
             <span className="border border-red-500">Call Now</span>
             <div className="flex items-center">

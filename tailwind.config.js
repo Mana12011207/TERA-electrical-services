@@ -10,7 +10,7 @@ module.exports = {
         secondaryPrimary: {
           default: "#9a75dc",
         },
-        accent: {
+        primaryAccent: {
           default: "##f1b65b",
         },
         secondaryAccent: {
@@ -18,7 +18,7 @@ module.exports = {
         },
       },
       fontFamily: {
-        sans: ["Merriweather", "sans-serif"],
+        sans: ["Helvetica", "sans-serif"],
       },
     },
   },
