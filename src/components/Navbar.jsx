@@ -55,7 +55,7 @@ function Navbar() {
           </nav>
         </div>
 
-        {/* CTA button */}
+        {/* CTA Button */}
         <button className="box-border flex-col items-center hidden w-auto h-auto font-bold rounded-lg lg:flex bg-accent">
           <div className="p-4">
             <span className="border border-red-500">Call Now</span>
@@ -67,7 +67,7 @@ function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile Menu */}
       <div
         className={`fixed top-0 left-0 w-full bg-primary-default py-8 pl-5 transform transition-transform duration-300 ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
