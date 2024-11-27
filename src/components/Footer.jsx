@@ -6,7 +6,7 @@ function Footer() {
   return (
     <>
       <footer className="w-full bg-gray-200 ">
-        <div className="grid w-full grid-cols-1 gap-4 py-4 justify-items-center">
+        <div className="grid w-full grid-cols-1 gap-4 py-4 justify-items-center md:grid-cols-2 xl:grid-cols-4 ">
           <img
             className=""
             src="assets/images/TeraElectricalServices.png"
