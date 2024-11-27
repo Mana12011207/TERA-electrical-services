@@ -4,9 +4,6 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        screens: {
-          "3xl": "1920px",
-        },
         primary: {
           default: "#3279de",
         },
@@ -22,6 +19,9 @@ module.exports = {
       },
       fontFamily: {
         sans: ["Helvetica", "sans-serif"],
+      },
+      screens: {
+        "3xl": "1920px",
       },
     },
   },

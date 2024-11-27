@@ -3,23 +3,24 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
   return (
     <>
       <footer className="w-full bg-black">
-        <div className="grid w-full grid-cols-1 gap-4 p-8 justify-items-center sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-4 2xl:p-16">
+        <div className="grid w-full grid-cols-1 gap-4 p-8 justify-items-center sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-4 2xl:p-16 3xl:px-32">
           {/* Company Logo */}
           <div className="flex items-center sm:col-start-1 sm:row-start-1">
             <img
-              className="rounded-xl"
-              src="assets/images/TeraElectricalServices.png"
+              className="w-auto"
+              src="assets/images/FooterLogo.png"
               alt="Company logo"
             ></img>
           </div>
 
           {/* Services */}
-          <div className="flex flex-col items-center w-full mt-4 text-white">
+          <div className="flex flex-col items-center w-full mt-4 text-white 2xl:items-start">
             <p className="text-xl font-bold 2xl:text-3xl">Services</p>
-            <ul className="flex flex-col items-center mt-2 text-sm 2xl:text-xl">
+            <ul className="flex flex-col items-center mt-2 text-sm 2xl:text-xl 2xl:items-start">
               <li>Repair and Renewal</li>
               <li>Installation</li>
               <li>Inspection and Testing</li>
@@ -27,7 +28,7 @@ function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="flex flex-col items-center w-full mt-4 text-white sm:col-start-2 sm:row-start-1">
+          <div className="flex flex-col items-center w-full mt-4 text-white sm:col-start-2 sm:row-start-1 2xl:items-start">
             <p className="text-xl font-bold 2xl:text-3xl">Quick links</p>
             <div className="flex flex-col mt-2 text-sm 2xl:text-xl">
               <a href="/" className="hover:text-secondaryAccent">
@@ -46,7 +47,7 @@ function Footer() {
           </div>
 
           {/* CTA Button */}
-          <div className="w-full mt-4 text-white justify-items-center">
+          <div className="w-full mt-4 text-white justify-items-center 2xl:justify-items-start">
             <p className="text-xl font-bold 2xl:text-3xl">Contact us</p>
             <button className="flex flex-col items-center mt-2 hover:text-secondaryAccent 2xl:flex-row">
               <BsFillTelephoneForwardFill className="box-border p-1 text-2xl text-black bg-white rounded-full 2xl:text-3xl" />
@@ -58,7 +59,7 @@ function Footer() {
               </a>
             </button>
 
-            <button className="flex flex-col items-center mt-4 hover:text-secondaryAccent 2xl:flex-row">
+            <button className="flex flex-col items-center mt-4 hover:text-secondaryAccent 2xl:flex-row 2xl:items-start">
               <MdEmail className="box-border p-1 text-2xl text-black bg-white rounded-full 2xl:text-3xl" />
               <a
                 href="mailto:j_huy@hotmail.com"
@@ -69,6 +70,10 @@ function Footer() {
             </button>
           </div>
         </div>
+        <hr className="border-t-2 border-white" />
+        <p className="m-4 text-center text-white">
+          @{currentYear} TERA Electrical Services. All rights reserved.
+        </p>
       </footer>
     </>
   );
