@@ -6,12 +6,14 @@ function Footer() {
   return (
     <>
       <footer className="w-full bg-black">
-        <div className="grid w-full grid-cols-1 gap-4 py-4 justify-items-center md:grid-cols-2 xl:grid-cols-4 ">
-          <img
-            className="rounded-xl"
-            src="assets/images/TeraElectricalServices.png"
-            alt="Company logo"
-          ></img>
+        <div className="grid w-full grid-cols-1 gap-4 py-4 justify-items-center sm:grid-cols-2 xl:grid-cols-4 ">
+          <div className="flex items-center  sm:col-start-1 sm:row-start-1">
+            <img
+              className="rounded-xl"
+              src="assets/images/TeraElectricalServices.png"
+              alt="Company logo"
+            ></img>
+          </div>
 
           {/* Services */}
           <div className="flex flex-col items-center w-full mt-4 text-white">
@@ -24,7 +26,7 @@ function Footer() {
           </div>
 
           {/* Quick links */}
-          <div className="flex flex-col items-center w-full mt-4 text-white">
+          <div className="flex flex-col items-center w-full mt-4 text-white sm:col-start-2 sm:row-start-1 sm:mt-0">
             <p className="text-xl font-bold">Quick links</p>
             <div className="flex flex-col mt-2 text-sm">
               <a href="/" className="hover:text-secondaryAccent">
