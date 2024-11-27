@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 function Footer() {
   return (
     <>
-      <footer className="w-full bg-gray-200 ">
+      <footer className="w-full bg-primary-default">
         <div className="grid w-full grid-cols-1 gap-4 py-4 justify-items-center md:grid-cols-2 xl:grid-cols-4 ">
           <img
             className=""
@@ -35,12 +35,12 @@ function Footer() {
           {/* CTA button */}
           <div className="w-full justify-items-center">
             <p className="text-lg font-bold">Contact us</p>
-            <button className="flex items-center border border-red-600">
+            <button className="">
               <FaPhoneSquareAlt />
               <a href="tel:+61411367347">411 367 347</a>
             </button>
 
-            <button className="flex items-center">
+            <button className="">
               <MdEmail />
               <a href="mailto:j_huy@hotmail.com">j_huy@hotmail.com</a>
             </button>

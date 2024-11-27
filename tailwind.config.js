@@ -5,16 +5,16 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          default: "#0a6acb",
+          default: "#3279de",
         },
         secondaryPrimary: {
-          default: "#ebebeb",
+          default: "#9a75dc",
         },
         accent: {
-          default: "#f26419",
+          default: "##f1b65b",
         },
         secondaryAccent: {
-          DEFAULT: "#f6a02d",
+          DEFAULT: "#29cca7",
         },
       },
       fontFamily: {
