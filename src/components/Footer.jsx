@@ -1,6 +1,6 @@
 import React from "react";
 import { BsFillTelephoneForwardFill } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
+import { MdEmail } from "react-icons/md";
 
 function Footer() {
   return (
@@ -27,25 +27,33 @@ function Footer() {
           <div className="flex flex-col items-center w-full mt-4 text-white">
             <p className="text-xl font-bold">Quick links</p>
             <div className="flex flex-col mt-2 text-sm">
-              <a href="/">Home</a>
-              <a href="/About">About</a>
-              <a href="/Services">Services</a>
-              <a href="/Contact">Contact</a>
+              <a href="/" className="hover:text-secondaryAccent">
+                Home
+              </a>
+              <a href="/About" className="hover:text-secondaryAccent">
+                About
+              </a>
+              <a href="/Services" className="hover:text-secondaryAccent">
+                Services
+              </a>
+              <a href="/Contact" className="hover:text-secondaryAccent">
+                Contact
+              </a>
             </div>
           </div>
 
           {/* CTA button */}
           <div className="w-full mt-4 text-white justify-items-center">
             <p className="text-xl font-bold">Contact us</p>
-            <button className="flex flex-col items-center mt-2">
+            <button className="flex flex-col items-center mt-2 hover:text-secondaryAccent">
               <BsFillTelephoneForwardFill className="box-border p-1 text-2xl text-black bg-white rounded-full" />
               <a href="tel:+61411367347" className="mt-1 text-sm">
                 411 367 347
               </a>
             </button>
 
-            <button className="flex flex-col items-center mt-4">
-              <AiOutlineMail className="box-border p-1 text-2xl text-black bg-white rounded-full" />
+            <button className="flex flex-col items-center mt-4 hover:text-secondaryAccent">
+              <MdEmail className="box-border p-1 text-2xl text-black bg-white rounded-full" />
               <a href="mailto:j_huy@hotmail.com" className="text-sm">
                 j_huy@hotmail.com
               </a>
