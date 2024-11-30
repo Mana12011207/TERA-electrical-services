@@ -14,10 +14,17 @@ function Navbar() {
 
   return (
     <>
-      {/* Collapsed Hamburger */}
-      <div className="w-full h-full lg:grid lg:grid-cols-3 lg:gap-4">
+      <div className="grid w-full h-full grid-cols-2">
+        {/* Branding Image */}
+        <img
+          className="w-auto h-auto"
+          src="assets/images/HeaderLogo.png"
+          alt="Company logo"
+        ></img>
+
+        {/* Collapsed Hamburger */}
         <button
-          className="z-10 w-8 h-8 mt-2 ml-2 bg-white rounded-full cursor-pointer bg-opacity-40 justify-items-center lg:hidden shrink-0"
+          className=""
           onClick={toggleHamburgerMenu}
           aria-label="Toggle menu"
         >
@@ -28,17 +35,10 @@ function Navbar() {
           )}
         </button>
 
-        {/* Branding Image */}
-        <img
-          className="box-border w-auto h-auto max-h-8 lg:col-span-1"
-          src="assets/images/TeraElectricalServices.png"
-          alt="Company logo"
-        ></img>
-
         {/* Horizontal Menu for larger screens */}
-        <div className="hidden lg:grid lg:col-span-1">
-          <nav className="w-auto lg:flex lg:items-end">
-            <ul className="flex space-x-10 cursor-pointer sm:text-sm lg:text-xl xl:text-2xl">
+        <div className="hidden">
+          <nav className="">
+            <ul className="">
               <li className="">
                 <a href="/">Home</a>
               </li>
@@ -56,11 +56,11 @@ function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <button className="box-border flex-col items-center hidden w-auto h-auto font-bold rounded-lg lg:flex bg-accent">
-          <div className="p-4">
-            <span className="border border-red-500">Call Now</span>
-            <div className="flex items-center">
-              <LuPhoneCall className="mr-2 text-lg font-bold" />
+        <button className="hidden border border-green-900">
+          <div className="">
+            <span className="">Call Now</span>
+            <div className="">
+              <LuPhoneCall className="" />
               <a href="tel:+61411367347">411 367 347</a>
             </div>
           </div>
@@ -74,30 +74,24 @@ function Navbar() {
         } `}
       >
         <nav className="pt-8">
-          <ul className="space-y-2 font-bold cursor-pointer">
+          <ul className="space-y-2 font-bold text-white">
             <li>
-              <a href="/" className="hover:text-secondaryPrimary-default">
+              <a href="/" className="">
                 Home
               </a>
             </li>
             <li>
-              <a
-                href="/services"
-                className="hover:text-secondaryPrimary-default "
-              >
+              <a href="/services" className="">
                 Services
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:text-secondaryPrimary-default">
+              <a href="/about" className="">
                 About
               </a>
             </li>
             <li>
-              <a
-                href="/contact"
-                className="hover:text-secondaryPrimary-default "
-              >
+              <a href="/contact" className="">
                 Contact
               </a>
             </li>

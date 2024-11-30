@@ -11,7 +11,7 @@ module.exports = {
           default: "#9a75dc",
         },
         primaryAccent: {
-          default: "##f1b65b",
+          default: "#f1b65b",
         },
         secondaryAccent: {
           DEFAULT: "#29cca7",
