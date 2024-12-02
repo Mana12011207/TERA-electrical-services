@@ -14,17 +14,17 @@ function Navbar() {
 
   return (
     <>
-      <div className="grid w-full h-full grid-cols-2">
+      <div className="grid w-full h-full grid-cols-3 gap-4">
         {/* Branding Image */}
         <img
-          className="w-auto h-auto"
+          className="w-auto h-auto col-start-1"
           src="assets/images/HeaderLogo.png"
           alt="Company logo"
         ></img>
 
         {/* Collapsed Hamburger */}
         <button
-          className=""
+          className="col-start-3 pr-6 border justify-items-end"
           onClick={toggleHamburgerMenu}
           aria-label="Toggle menu"
         >
@@ -56,7 +56,7 @@ function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <button className="hidden border border-green-900">
+        <button className="col-start-2 border border-green-900 ">
           <div className="">
             <span className="">Call Now</span>
             <div className="">
