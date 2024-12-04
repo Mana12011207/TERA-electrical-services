@@ -26,7 +26,7 @@ function Navbar() {
 
         {/* Collapsed Hamburger */}
         <button
-          className="col-start-3 mr-6 border justify-self-end"
+          className="col-start-3 p-2 mr-6 border rounded-full justify-self-end"
           onClick={toggleHamburgerMenu}
           aria-label="Toggle menu"
         >
@@ -59,10 +59,12 @@ function Navbar() {
         {/* CTA Button */}
         <button className="w-full col-start-1 col-end-4 border border-green-900">
           <div className="flex items-center justify-center space-x-4">
-            <LuPhoneCall className="text-lg" />
+            <div className="p-1 border rounded-full">
+              <LuPhoneCall className="text-2xl" />
+            </div>
             <div className="flex flex-col">
-              <span className="">Call Now</span>
-              <a href="tel:+61411367347" className="text-sm">
+              <span className="text-left">Call Now</span>
+              <a href="tel:+61411367347" className="text-sm font-bold">
                 411 367 347
               </a>
             </div>
