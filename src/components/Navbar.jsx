@@ -14,24 +14,26 @@ function Navbar() {
 
   return (
     <>
-      <div className="grid w-full h-full grid-cols-3 gap-4">
+      <div className="grid items-center w-full h-full grid-cols-3">
         {/* Branding Image */}
-        <img
-          className="w-auto h-auto col-start-1"
-          src="assets/images/HeaderLogo.png"
-          alt="Company logo"
-        ></img>
+        <div className="flex items-center col-start-1">
+          <img
+            className="w-auto h-16"
+            src="assets/images/HeaderLogo.png"
+            alt="Company logo"
+          ></img>
+        </div>
 
         {/* Collapsed Hamburger */}
         <button
-          className="col-start-3 pr-6 border justify-items-end"
+          className="col-start-3 mr-6 border justify-self-end"
           onClick={toggleHamburgerMenu}
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
             <GrFormClose className="text-lg" />
           ) : (
-            <GiHamburgerMenu />
+            <GiHamburgerMenu className="text-2xl" />
           )}
         </button>
 
@@ -54,14 +56,15 @@ function Navbar() {
             </ul>
           </nav>
         </div>
-
         {/* CTA Button */}
-        <button className="col-start-2 border border-green-900 ">
-          <div className="">
-            <span className="">Call Now</span>
-            <div className="">
-              <LuPhoneCall className="" />
-              <a href="tel:+61411367347">411 367 347</a>
+        <button className="w-full col-start-1 col-end-4 border border-green-900">
+          <div className="flex items-center justify-center space-x-4">
+            <LuPhoneCall className="text-lg" />
+            <div className="flex flex-col">
+              <span className="">Call Now</span>
+              <a href="tel:+61411367347" className="text-sm">
+                411 367 347
+              </a>
             </div>
           </div>
         </button>
