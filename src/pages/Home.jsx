@@ -3,9 +3,17 @@ import BaseLayout from "../components/BaseLayout";
 
 function Home() {
   return (
-    <BaseLayout>
-      <div>Home</div>
-    </BaseLayout>
+    <>
+      <BaseLayout>
+        <div className="w-full">
+          <img
+            src="/assets/images/Trustworthy Electricians with More Than 15 Years of Experience.svg"
+            alt="Hero"
+            className="w-full"
+          ></img>
+        </div>
+      </BaseLayout>
+    </>
   );
 }
 

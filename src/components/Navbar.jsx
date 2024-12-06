@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="relative grid items-center w-full h-full grid-cols-3 lg:p-2">
+      <div className="relative grid items-center w-full h-full grid-cols-3">
         {/* Branding Image */}
         <div className="flex items-center col-start-1 lg:justify-center">
           <img
@@ -39,7 +39,7 @@ function Navbar() {
         {/* Horizontal Menu for larger screens */}
         <div className="hidden h-full lg:w-full lg:grid lg:col-start-2 lg:justify-self-center">
           <nav className="flex justify-center w-full ">
-            <ul className="flex items-end space-x-6 text-lg font-bold 2xl:space-x-8 2xl:text-2xl 3xl:text-3xl">
+            <ul className="flex items-end space-x-4 text-lg font-bold 2xl:space-x-8 2xl:text-2xl 3xl:text-3xl">
               <li className="hover:text-secondaryAccent">
                 <a href="/">Home</a>
               </li>
