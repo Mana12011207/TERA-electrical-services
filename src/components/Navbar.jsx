@@ -17,8 +17,8 @@ function Navbar() {
         {/* Branding Image */}
         <div className="flex items-center col-start-1 lg:justify-center">
           <img
-            className="w-auto h-16 lg:w-[70%] "
-            src="assets/images/HeaderLogo.png"
+            className="w-auto h-16 "
+            src="assets/images/HeaderLogo.svg"
             alt="Company logo"
           ></img>
         </div>
