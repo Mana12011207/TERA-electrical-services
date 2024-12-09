@@ -7,7 +7,7 @@ function Home() {
       <BaseLayout>
         <div className="w-full">
           <img
-            src="/assets/images/Trustworthy Electricians with More Than 15 Years of Experience.svg"
+            src="assets/images/HeroImage.svg"
             alt="Hero"
             className="w-full"
           ></img>

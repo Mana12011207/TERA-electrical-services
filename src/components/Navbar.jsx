@@ -13,7 +13,7 @@ function Navbar() {
 
   return (
     <>
-      <div className="relative grid items-center w-full h-full grid-cols-3">
+      <div className="relative grid items-center w-full h-full grid-cols-3 lg:py-6">
         {/* Branding Image */}
         <div className="flex items-center col-start-1 lg:justify-center">
           <img
@@ -37,9 +37,9 @@ function Navbar() {
         </button>
 
         {/* Horizontal Menu for larger screens */}
-        <div className="hidden h-full lg:w-full lg:grid lg:col-start-2 lg:justify-self-center">
+        <div className="hidden h-full lg:w-full lg:grid lg:col-start-2">
           <nav className="flex justify-center w-full ">
-            <ul className="flex items-end space-x-4 text-lg font-bold 2xl:space-x-8 2xl:text-2xl 3xl:text-3xl">
+            <ul className="flex items-center space-x-4 text-lg font-bold 2xl:space-x-8 2xl:text-2xl 3xl:text-3xl">
               <li className="hover:text-secondaryAccent">
                 <a href="/">Home</a>
               </li>
@@ -57,7 +57,7 @@ function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <button className="w-full col-start-1 col-end-4 lg:col-start-3 lg:w-[80%] lg:justify-self-center lg:rounded-lg bg-primaryAccent-default lg:">
+        <button className="w-full col-start-1 col-end-4 lg:col-start-3 lg:w-[60%] lg:justify-self-center lg:rounded-lg lg:py-2 bg-primaryAccent-default lg:">
           <div className="flex items-center justify-center space-x-4">
             <div className="p-1 bg-white border rounded-full">
               <LuPhoneCall className="text-2xl" />
