@@ -6,6 +6,7 @@ function Home() {
     <>
       <BaseLayout>
         <div className="flex flex-col">
+          {/* Hero Image */}
           <div className="w-full">
             <img
               src="assets/images/HeroImage.svg"
@@ -13,29 +14,25 @@ function Home() {
               className="w-full"
             ></img>
           </div>
-          <div className="hidden bg-primaryAccent-default">
-            <button>Get in Touch Now</button>
-          </div>
-
-          <div className="px-6 mt-2">
-            <h1 className="text-2xl font-bold text-center">
+          <div className="mx-6">
+            <h1 className="mt-2 text-2xl font-bold text-center">
               Welcome to
               <br /> TERA Electrical Services
             </h1>
-            <h2 className="mt-2 font-bold text-center text-md">
+            <p className="mt-8 text-xl font-bold text-center">
               Why We're the Best Choice
-            </h2>
-
-            <div>
+            </p>
+            {/* Experience and Expertices */}
+            <div className="mt-4 border rounded-md">
               <img
                 src="assets/images/ExperienceAndExpertise.svg"
                 alt="Experience and Expertise"
-                className="rounded-lg"
+                className=""
               ></img>
-              <h3 className="font-semibold text-center">
+              <h3 className="mt-2 text-lg font-semibold text-center underline">
                 Experience and Expertise
               </h3>
-              <p>
+              <p className="m-2">
                 For over 15 years, we have been involved in various electrical
                 works, ranging from residential projects to large-scale
                 commercial buildings and office installations. Our experienced
@@ -44,15 +41,17 @@ function Home() {
                 that meet our clients' needs.
               </p>
             </div>
-
-            <div>
+            {/* Transparent Pricing */}
+            <div className="mt-4 border rounded-md">
               <img
                 src="assets/images/TransparentPricing.svg"
                 alt="Transparent Pricing"
                 className="rounded-lg"
               ></img>
-              <h3 className="font-semibold text-center">Transparent Pricing</h3>
-              <p>
+              <h3 className="mt-2 text-lg font-semibold text-center underline">
+                Transparent Pricing
+              </h3>
+              <p className="m-2">
                 We promise transparent pricing that earns our clients' trust. We
                 provide detailed estimates upfront, ensuring there are no hidden
                 costs or unexpected charges. All fees are clearly outlined, and
@@ -61,14 +60,17 @@ function Home() {
                 offering the best solutions for each project's requirements.
               </p>
             </div>
-            <div>
+            {/* Customer Supports */}
+            <div className="mt-4 border rounded-md">
               <img
                 src="assets/images/CustomerSupports.svg"
                 alt="Customer supports"
                 className="rounded-lg"
               ></img>
-              <h3 className="font-semibold text-center">Customer Supports</h3>
-              <p>
+              <h3 className="mt-2 font-semibold text-center underline">
+                Customer Supports
+              </h3>
+              <p className="m-2">
                 We are dedicated to providing prompt and courteous service,
                 responding to your questions and concerns with efficiency. Your
                 satisfaction is our top priority, and we strive to deliver the
@@ -79,9 +81,9 @@ function Home() {
                 supported throughout the process.
               </p>
             </div>
-            <div>
-              {/* Testimonials */}
-              <h2 className="font-bold text-center">
+            {/* Testimonials */}
+            <div className="mt-6">
+              <h2 className="text-lg font-bold text-center">
                 What Our Clients Say About Us
               </h2>
             </div>
