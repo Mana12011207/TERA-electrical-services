@@ -1,5 +1,6 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
+import { IoPersonCircle } from "react-icons/io5";
 
 function Home() {
   return (
@@ -67,7 +68,7 @@ function Home() {
                 alt="Customer supports"
                 className="rounded-lg"
               ></img>
-              <h3 className="mt-2 font-semibold text-center underline">
+              <h3 className="mt-2 text-lg font-semibold text-center underline">
                 Customer Supports
               </h3>
               <p className="m-2">
@@ -83,11 +84,17 @@ function Home() {
             </div>
             {/* Testimonials */}
             <div className="mt-6">
-              <h2 className="text-lg font-bold text-center">
+              <h2 className="text-xl font-bold text-center">
                 What Our Clients Say About Us
               </h2>
             </div>
-            <img src="assets/images/TestimonyStars.svg" alt="TestimonyStarts" />
+            <div className="flex justify-center">
+              <img
+                src="assets/images/TestimonyStars.svg"
+                alt="TestimonyStarts"
+                className=""
+              />
+            </div>
             <p>Slider here</p>
           </div>
         </div>
