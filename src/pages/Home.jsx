@@ -1,5 +1,6 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
+import Testimonials from "../components/Testimonials";
 import { IoPersonCircle } from "react-icons/io5";
 
 function Home() {
@@ -95,8 +96,9 @@ function Home() {
                 className=""
               />
             </div>
-            <p>Slider here</p>
+            <Testimonials />
           </div>
+          <button>Contact Us</button>
         </div>
       </BaseLayout>
     </>
