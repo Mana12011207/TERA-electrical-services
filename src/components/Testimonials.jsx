@@ -29,7 +29,26 @@ const reviews = [
 ];
 
 function Testimonials() {
-  return <div></div>;
+  return (
+    <>
+      <div className="flex flex-col items-center">
+        <p> What Our Clients Say About Us</p>
+        <img
+          src="assets/images/TestimonyStars.svg"
+          alt="Testimonials Star"
+        ></img>
+
+        {reviews.map((review, index) => (
+          <div key={index} className="flex items-center flex-cols-1">
+            <div className="flex-col p-6 bg-yellow-500 rounded-lg shadow-md ">
+              <h3>{review.review}</h3>
+              <p className="font-bold text-center">{review.name}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </>
+  );
 }
 
 export default Testimonials;

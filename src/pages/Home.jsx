@@ -84,21 +84,8 @@ function Home() {
               </p>
             </div>
             {/* Testimonials */}
-            <div className="mt-6">
-              <h2 className="text-xl font-bold text-center">
-                What Our Clients Say About Us
-              </h2>
-            </div>
-            <div className="flex justify-center">
-              <img
-                src="assets/images/TestimonyStars.svg"
-                alt="TestimonyStarts"
-                className=""
-              />
-            </div>
             <Testimonials />
           </div>
-          <button>Contact Us</button>
         </div>
       </BaseLayout>
     </>
