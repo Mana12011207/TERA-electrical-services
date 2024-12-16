@@ -45,18 +45,12 @@ function Testimonials() {
 
   return (
     <>
-      <div className="flex flex-col items-center w-full my-6">
-        <p className="text-2xl font-bold text-center">
-          {" "}
+      <div className="flex flex-col items-center w-full my-12">
+        <p className="text-3xl font-bold text-center xl:text-4xl 3xl:text-7xl">
           What Our Clients Say About Us
         </p>
-        <img
-          src="assets/images/TestimonyStars.svg"
-          alt="Testimonials Star"
-          className=""
-        ></img>
 
-        <div className="relative w-full max-w-xl overflow-hidden">
+        <div className="relative w-full max-w-xl mt-6 overflow-hidden">
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-500 ease-in-out"
@@ -64,9 +58,9 @@ function Testimonials() {
             >
               {reviews.map((review, index) => (
                 <div key={index} className="flex-shrink-0 w-full">
-                  <div className="flex flex-col items-center p-4 bg-yellow-500 rounded-lg shadow-md ">
-                    <h3>{review.review}</h3>
-                    <p className="font-bold text-center">{review.name}</p>
+                  <div className="flex flex-col items-center p-8 bg-yellow-500 rounded-lg shadow-md ">
+                    <p className="">{review.review}</p>
+                    <p className="mt-4 font-bold text-center">{review.name}</p>
                   </div>
                 </div>
               ))}
