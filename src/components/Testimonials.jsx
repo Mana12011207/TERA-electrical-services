@@ -35,12 +35,6 @@ function Testimonials() {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + reviews.length) % reviews.length
-    );
-  };
-
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
@@ -51,26 +45,26 @@ function Testimonials() {
 
   return (
     <>
-      <div className="flex flex-col items-center min-h-screen p-8 bg-gray-100">
-        <p className="mb-4 text-2xl font-bold">
+      <div className="flex flex-col items-center w-full my-6">
+        <p className="text-2xl font-bold text-center">
           {" "}
           What Our Clients Say About Us
         </p>
         <img
           src="assets/images/TestimonyStars.svg"
           alt="Testimonials Star"
-          className="mb-6"
+          className=""
         ></img>
 
-        <div className="relative w-full max-w-xl">
+        <div className="relative w-full max-w-xl overflow-hidden">
           <div className="overflow-hidden">
             <div
               className="flex transition-transform duration-500 ease-in-out"
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {reviews.map((review, index) => (
-                <div key={index} clas className="flex-shrink-0 w-full p-4">
-                  <div className="flex flex-col p-6 bg-yellow-500 rounded-lg shadow-md ">
+                <div key={index} className="flex-shrink-0 w-full">
+                  <div className="flex flex-col items-center p-4 bg-yellow-500 rounded-lg shadow-md ">
                     <h3>{review.review}</h3>
                     <p className="font-bold text-center">{review.name}</p>
                   </div>

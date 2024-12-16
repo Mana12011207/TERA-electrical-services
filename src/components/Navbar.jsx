@@ -57,7 +57,7 @@ function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <button className="w-full col-start-1 col-end-4 lg:col-start-3 lg:w-[60%] lg:justify-self-center lg:rounded-lg lg:py-2 bg-primaryAccent-default lg:">
+        <button className="w-full col-start-1 col-end-4 lg:col-start-3 lg:w-[60%] lg:justify-self-center lg:rounded-lg lg:py-2 bg-primaryAccent-default shadow-lg">
           <div className="flex items-center justify-center space-x-4">
             <div className="p-1 bg-white border rounded-full">
               <LuPhoneCall className="text-2xl" />

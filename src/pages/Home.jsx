@@ -1,13 +1,12 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
 import Testimonials from "../components/Testimonials";
-import { IoPersonCircle } from "react-icons/io5";
 
 function Home() {
   return (
     <>
       <BaseLayout>
-        <div className="flex flex-col">
+        <div className="flex flex-col w-full">
           {/* Hero Image */}
           <div className="w-full">
             <img
