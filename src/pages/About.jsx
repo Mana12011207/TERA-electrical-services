@@ -1,5 +1,6 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
+import FAQs from "../components/FAQs";
 
 function About() {
   return (
@@ -29,6 +30,7 @@ function About() {
             time, providing peace of mind and long-lasting results.
           </p>
           <h2 className="text-center">FAQs</h2>
+          <FAQs />
         </div>
       </div>
     </BaseLayout>
