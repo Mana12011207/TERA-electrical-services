@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FaPlus } from "react-icons/fa";
-import { FaMinus } from "react-icons/fa";
+import { FaPlusCircle } from "react-icons/fa";
+import { FaMinusCircle } from "react-icons/fa";
 
 const faqs = [
   {
@@ -41,23 +41,37 @@ const faqs = [
 ];
 
 function FAQs() {
-  // const [isAnswerVisible, setIsAnswerVisible] = useState();
+  const [visibleIndex, setVisibleIndex] = useState(null);
 
-  // const openAnswers =(){
-  //   setIsAnswerVisible()
-  // }
+  const toggleAnswer = (index) => {
+    setVisibleIndex(visibleIndex === index ? null : index);
+  };
 
   return (
-    <>
-      <div>
-        {faqs.map((faq, index) => (
-          <div key={index}>
-            <p>{faq.question}</p>
-            <p>{faq.answer}</p>
+    <div>
+      {faqs.map((faq, index) => (
+        <div key={index}>
+          <div className="flex items-center">
+            <p className="my-4 mr-4">{faq.question} </p>
+            <button onClick={() => toggleAnswer(index)}>
+              {visibleIndex === index ? (
+                <FaMinusCircle className="text-lg" />
+              ) : (
+                <FaPlusCircle className="text-lg" />
+              )}
+            </button>
           </div>
-        ))}
-      </div>
-    </>
+          <p
+            className={`text-gray-500 text-sm ${
+              visibleIndex === index ? "" : "hidden"
+            }`}
+          >
+            {faq.answer}
+          </p>
+          <hr className="border border-solid" />
+        </div>
+      ))}
+    </div>
   );
 }
 

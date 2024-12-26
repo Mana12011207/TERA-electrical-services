@@ -1,6 +1,7 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
 import FAQs from "../components/FAQs";
+import { FcElectricity } from "react-icons/fc";
 
 function About() {
   return (
@@ -29,8 +30,13 @@ function About() {
             industry standards ensures that every job is done right the first
             time, providing peace of mind and long-lasting results.
           </p>
-          <h2 className="text-center">FAQs</h2>
-          <FAQs />
+          <div className="flex flex-col items-center p-6 mt-8 border border-solid rounded-lg">
+            <div className="flex justify-center">
+              <FcElectricity className="mr-2 text-2xl" />
+              <h2 className="text-2xl">FAQs</h2>
+            </div>
+            <FAQs />
+          </div>
         </div>
       </div>
     </BaseLayout>
