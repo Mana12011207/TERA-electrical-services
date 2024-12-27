@@ -6,18 +6,18 @@ import { FcElectricity } from "react-icons/fc";
 function About() {
   return (
     <BaseLayout>
-      <div className="flex flex-col">
-        <div className="relative w-full">
+      <div className="flex flex-col items-center w-full">
+        <div className="relative w-full ">
           <img
             src="assets/images/AboutUS.svg"
             alt="About us"
-            className="object-cover w-full h-32 "
+            className="object-cover w-full h-32 md:min-h-64 "
           />
-          <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 ">
+          <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 md:text-2xl">
             About Us
           </p>
         </div>
-        <div className="m-8">
+        <div className="w-full px-10 py-8 mx-auto max-w-7xl">
           <h2 className="text-2xl text-center">Who We Are</h2>
           <p className="mt-2 text-gray-500 ">
             With over 15 years of hands-on experience in electrical services, We
