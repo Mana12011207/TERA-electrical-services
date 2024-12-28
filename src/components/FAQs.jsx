@@ -52,20 +52,22 @@ function FAQs() {
       {faqs.map((faq, index) => (
         <div key={index} className="w-full md:w-1/2">
           <div className="flex items-center justify-center">
-            <p className="my-4 mr-4 tracking-wide text-center">
-              {faq.question}{" "}
+            <p className="my-4 mr-4 tracking-wide text-center lg:text-xl">
+              {faq.question}
             </p>
             <button onClick={() => toggleAnswer(index)}>
               {visibleIndex === index ? (
-                <FaMinusCircle className="text-lg" />
+                <FaMinusCircle className="text-lg lg:text-xl" />
               ) : (
-                <FaPlusCircle className="text-lg" />
+                <FaPlusCircle className="text-lg lg:text-xl" />
               )}
             </button>
           </div>
           <p
-            className={`text-gray-500 text-sm text-center tracking-wide transition-all duration-300 ease-in-out ${
-              visibleIndex === index ? "max-h-full" : "max-h-0 overflow-hidden"
+            className={`text-gray-500 text-sm text-center tracking-wide transition-all duration-700 ease-in-out lg:text-lg ${
+              visibleIndex === index
+                ? "max-h-96 opacity-100"
+                : "max-h-0 opacity-0 overflow-hidden"
             }`}
           >
             {faq.answer}
