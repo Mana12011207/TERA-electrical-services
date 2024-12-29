@@ -44,10 +44,10 @@ function Navbar() {
                 <a href="/">Home</a>
               </li>
               <li className="hover:text-secondaryAccent">
-                <a href="/services">Services</a>
+                <a href="/about">About</a>
               </li>
               <li className="hover:text-secondaryAccent">
-                <a href="/about">About</a>
+                <a href="/services">Services</a>
               </li>
               <li className="hover:text-secondaryAccent">
                 <a href="/contact">Contact</a>
