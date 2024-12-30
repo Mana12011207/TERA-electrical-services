@@ -52,7 +52,7 @@ function FAQs() {
       {faqs.map((faq, index) => (
         <div key={index} className="w-full md:w-1/2">
           <div className="flex items-center justify-center">
-            <p className="my-4 mr-4 tracking-wide text-center lg:text-xl">
+            <p className="my-2 mr-2 tracking-wide text-center lg:text-xl">
               {faq.question}
             </p>
             <button onClick={() => toggleAnswer(index)}>

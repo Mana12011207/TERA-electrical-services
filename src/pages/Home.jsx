@@ -15,7 +15,7 @@ function Home() {
               className="w-full"
             ></img>
           </div>
-          <div className="mx-12 mt-8">
+          <div className="px-10 mt-8">
             <h1 className="mt-2 text-4xl font-bold text-center xl:text-7xl 3xl:text-9xl">
               Welcome to
               <br /> TERA Electrical Services

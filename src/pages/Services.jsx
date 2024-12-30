@@ -1,5 +1,6 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
+import { ImCheckmark } from "react-icons/im";
 
 function Services() {
   return (
@@ -15,41 +16,101 @@ function Services() {
             Our Services
           </p>
         </div>
-        <h1 className="mt-8 text-lg text-center">Residential and Commercial</h1>
-        <div className="w-full px-10 py-8 mx-auto max-w-7xl">
+        <h1 className="mt-6 text-lg font-bold text-center">
+          Residential and Commercial
+        </h1>
+        <div className="w-full px-6 py-4 ">
           <div>
-            <p className="text-center">Repair and Renewals</p>
-            <img
-              src="assets/images/RepairAndRenewals.svg"
-              alt="RepairAndRenewals"
-            />
-            <ul>
-              <li>Extensions</li>
-              <li>Switchboard Upgrades</li>
-              <li>New Sockets and more...</li>
+            <div className="relative">
+              <img
+                src="assets/images/RepairAndRenewals.svg"
+                alt="RepairAndRenewals"
+                className="border rounded-lg shadow-lg"
+              />
+              <p className="absolute w-full text-lg font-bold text-blue-700 bg-white bg-opacity-80 bottom-2">
+                Repair and Renewals
+              </p>
+            </div>
+            <ul className="mt-2 text-sm tracking-wide text-gray-500">
+              <li className="flex items-center">
+                <ImCheckmark className="mr-1 text-sm" /> Extensions
+              </li>
+              <li className="flex items-center">
+                <ImCheckmark className="mr-1 text-sm" />
+                Switchboard Upgrades
+              </li>
+              <li className="flex items-center">
+                <ImCheckmark className="mr-1 text-sm" />
+                New Sockets and more...
+              </li>
             </ul>
           </div>
-          <div>
-            <p className="text-center">Installation</p>
-            <img src="assets/images/Installation.svg" alt="Installation" />
-            <ul>
-              <li>All types Lighting</li>
-              <li>Appliance Installation</li>
-              <li>Security System Installation</li>
-              <li>Network and Data Cabling and more...</li>
+          <div className="mt-4">
+            <div className="relative">
+              <img
+                src="assets/images/Installation.svg"
+                alt="Installation"
+                className="border rounded-lg shadow-lg"
+              />
+              <p className="absolute w-full text-lg font-bold text-blue-700 bg-white bg-opacity-80 bottom-2">
+                Installation
+              </p>
+            </div>
+            <ul className="mt-2 text-sm tracking-wide text-gray-500">
+              <li className="flex items-center">
+                {" "}
+                <ImCheckmark className="mr-1 text-sm" />
+                All types Lighting
+              </li>
+              <li className="flex items-center">
+                {" "}
+                <ImCheckmark className="mr-1 text-sm" />
+                Appliance Installation
+              </li>
+              <li className="flex items-center">
+                {" "}
+                <ImCheckmark className="mr-1 text-sm" />
+                Security System Installation
+              </li>
+              <li className="flex items-center">
+                {" "}
+                <ImCheckmark className="mr-1 text-sm" />
+                Network and Data Cabling and more...
+              </li>
             </ul>
           </div>
-          <div>
-            <p className="text-center">Inspection and Testing</p>
-            <img
-              src="assets/images/InspectionAndTesting.svg"
-              alt="InspectionAndTesting"
-            />
-            <ul>
-              <li>Wiring Inspection</li>
-              <li>Insulation Resistance Testing</li>
-              <li>Electrical Load Testing</li>
-              <li>Fault finding and more...</li>
+          <div className="mt-4 ">
+            <div className="relative">
+              <img
+                src="assets/images/InspectionAndTesting.svg"
+                alt="InspectionAndTesting"
+                className="border rounded-lg shadow-lg"
+              />
+              <p className="absolute w-full text-lg font-bold text-blue-700 bg-white bg-opacity-80 bottom-2">
+                Inspection and Testing
+              </p>
+            </div>
+            <ul className="mt-2 text-sm tracking-wide text-gray-500">
+              <li className="flex items-center">
+                {" "}
+                <ImCheckmark className="mr-1 text-sm" />
+                Wiring Inspection
+              </li>
+              <li className="flex items-center">
+                {" "}
+                <ImCheckmark className="mr-1 text-sm" />
+                Insulation Resistance Testing
+              </li>
+              <li className="flex items-center">
+                {" "}
+                <ImCheckmark className="mr-1 text-sm" />
+                Electrical Load Testing
+              </li>
+              <li className="flex items-center">
+                {" "}
+                <ImCheckmark className="mr-1 text-sm" />
+                Fault finding and more...
+              </li>
             </ul>
           </div>
         </div>

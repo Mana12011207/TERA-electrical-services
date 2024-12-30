@@ -86,13 +86,13 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="/services" className="">
-                Services
+              <a href="/about" className="">
+                About
               </a>
             </li>
             <li>
-              <a href="/about" className="">
-                About
+              <a href="/services" className="">
+                Services
               </a>
             </li>
             <li>
