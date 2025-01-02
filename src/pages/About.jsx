@@ -17,8 +17,8 @@ function About() {
             About Us
           </p>
         </div>
-        <div className="w-full px-6 py-8 mx-auto max-w-7xl">
-          <h2 className="text-2xl text-center">Who We Are</h2>
+        <div className="w-full px-10 py-8 mx-auto max-w-7xl">
+          <h1 className="text-2xl font-bold text-center">Who We Are</h1>
           <p className="mt-2 tracking-wide text-gray-500 lg:text-lg">
             With over 15 years of hands-on experience in electrical services, We
             bring a wealth of expertise and commitment to quality and safety in
