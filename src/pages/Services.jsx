@@ -17,10 +17,10 @@ function Services() {
           </p>
         </div>
         <div className="w-full px-10 py-8 mx-auto max-w-7xl">
-          <h1 className="mt-6 text-2xl font-bold text-center">
+          <h1 className="mt-6 text-2xl font-bold text-center lg:text-3xl">
             Residential and Commercial
           </h1>
-          <div className="w-full grid-cols-3 px-6 mb-6 lg:space-x-6 lg:grid">
+          <div className="w-full grid-cols-3 mb-6 lg:grid lg:gap-6">
             <ServiceSection
               imgSrc="assets/images/RepairAndRenewals.svg"
               altText="Repair and Renewals"
@@ -66,13 +66,13 @@ function ServiceSection({ imgSrc, altText, title, items }) {
         <img
           src={imgSrc}
           alt={altText}
-          className="object-cover h-full border rounded-lg shadow-lg"
+          className="object-cover border rounded-lg shadow-lg"
         />
-        <p className="absolute w-full pl-2 text-lg font-bold text-blue-900 bg-white bg-opacity-80 bottom-2">
+        <p className="absolute w-full pl-2 text-lg font-bold text-blue-900 bg-white bg-opacity-90 bottom-2 md:text-2xl">
           {title}
         </p>
       </div>
-      <ul className="mt-2 text-sm tracking-wide text-gray-500">
+      <ul className="mt-2 text-sm tracking-wide text-gray-500 md:text-xl">
         {items.map((item, index) => (
           <li key={index} className="flex items-center">
             <ImCheckmark className="mr-1 text-xs text-yellow-400 " />
