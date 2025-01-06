@@ -47,7 +47,7 @@ function Contact() {
                     required
                     placeholder="Full name"
                     size="30"
-                    className="p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
+                    className="w-full p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
                   />
                 </div>
                 <div className="flex flex-col items-start">
@@ -62,7 +62,7 @@ function Contact() {
                     name="email"
                     placeholder="Email"
                     size="30"
-                    className="p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
+                    className="w-full p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
                   ></input>
                 </div>
                 <div className="flex flex-col items-start">
@@ -77,7 +77,7 @@ function Contact() {
                     name="Phone"
                     placeholder="Phone"
                     size="30"
-                    className="p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
+                    className="w-full p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
                   ></input>
                 </div>
                 <div className="flex flex-col items-start">
@@ -92,7 +92,7 @@ function Contact() {
                     name="address"
                     placeholder="Home Address"
                     size="30"
-                    className="p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
+                    className="w-full p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
                   ></input>
                 </div>
                 <div className="flex flex-col items-start">
@@ -108,7 +108,7 @@ function Contact() {
                     placeholder="Message"
                     rows="5"
                     cols="29"
-                    className="p-1 border rounded-sm solid focus:outline-none focus:border-blue-500 focus:border-4"
+                    className="w-full p-1 border rounded-sm  solid focus:outline-none focus:border-blue-500 focus:border-4"
                   />
                 </div>
                 <div className="text-center">
