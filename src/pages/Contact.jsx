@@ -1,7 +1,16 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
+import { useNavigate } from "react-router-dom";
 
 function Contact() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    navigate.push("/thank-you");
+  };
+
   return (
     <>
       <BaseLayout>
@@ -17,7 +26,7 @@ function Contact() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-center w-full px-10 py-8 mx-auto bg-gray-200 rounded-lg max-w-7xl">
+          <div className="flex flex-col items-center justify-center w-full px-10 py-8 mx-auto bg-gray-200 max-w-7xl">
             <h2 className="text-2xl font-bold text-center lg:text-3xl">
               Reach out TERA Electricians today
             </h2>
@@ -108,7 +117,7 @@ function Contact() {
                     placeholder="Message"
                     rows="5"
                     cols="29"
-                    className="w-full p-1 border rounded-sm  solid focus:outline-none focus:border-blue-500 focus:border-4"
+                    className="w-full p-1 border rounded-sm solid focus:outline-none focus:border-blue-500 focus:border-4"
                   />
                 </div>
                 <div className="text-center">
