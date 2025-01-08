@@ -24,7 +24,8 @@ function Home() {
               Why We're the Best Choice
             </p>
             {/* Experience and Expertices */}
-            <div className="w-full grid-cols-3 space-x-3 xl:grid">
+
+            <div className="w-full grid-cols-3 px-10 py-8 mx-auto space-x-6 xl:grid max-w-7xl">
               <div className="mt-4 border rounded-lg shadow-md">
                 <img
                   src="assets/images/ExperienceAndExpertise.svg"
