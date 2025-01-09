@@ -1,0 +1,29 @@
+.submitted {
+  opacity: 0.8;
+  position: relative;
+}
+
+.thank-you-message {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  color: blue;
+  opacity: 1;
+}
+
+@media (min-width: 1024px) {
+  .thank-you-message {
+    width: 40%;
+    font-size: x-large;
+    padding: 30px;
+  }
+}

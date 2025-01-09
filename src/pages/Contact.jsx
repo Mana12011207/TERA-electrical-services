@@ -1,6 +1,7 @@
 import { useState } from "react";
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
+import "/Users/manamisumi/tera-electrical-services/src/Contact.css";
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);
@@ -13,8 +14,12 @@ function Contact() {
   return (
     <>
       <BaseLayout>
-        <div className="flex flex-col items-center w-full">
-          <div className="relative w-full ">
+        <div
+          className={`flex flex-col items-center w-full ${
+            submitted ? "submitted" : ""
+          }`}
+        >
+          <div className="relative w-full">
             <img
               src="assets/images/ContactUs.svg"
               alt="Contact us"
@@ -25,7 +30,7 @@ function Contact() {
             </p>
           </div>
 
-          <div className="flex flex-col items-center justify-center w-full px-10 py-8 mx-auto bg-gray-200 max-w-7xl">
+          <div className="flex flex-col items-center justify-center w-full px-10 py-8 mx-auto bg-gray-200 contact-page max-w-7xl">
             <h2 className="text-2xl font-bold text-center lg:text-3xl">
               Reach out TERA Electricians today
             </h2>
@@ -37,10 +42,10 @@ function Contact() {
 
             {/*  Conditional rendering based on the submitted state*/}
             {submitted ? (
-              <div className="w-full bg-white bg-opacity-80">
-                <p className="font-bold text-center">
-                  Thank you for your enquiry. <br />
-                  We'll get back to you soon!
+              <div className="thank-you-message">
+                <p>
+                  Thank you for contacting us! <br />
+                  We'll get back to you at the earliest opportunity.
                 </p>
               </div>
             ) : (
