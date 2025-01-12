@@ -1,15 +1,33 @@
-import { useState } from "react";
-import { EmailJSResponseStatus } from "@emailjs/browser";
+import { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
 import "/Users/manamisumi/tera-electrical-services/src/Contact.css";
 
 function Contact() {
+  const form = useRef();
+
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    setSubmitted(true);
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setSubmitted(true);
+        },
+        (error) => {
+          console.log("FAILED", error.text);
+        }
+      );
   };
 
   return (
@@ -54,6 +72,7 @@ function Contact() {
                 <form
                   onSubmit={handleSubmit}
                   className="items-center mt-2 space-y-4"
+                  ref={form}
                 >
                   <div className="flex flex-col items-start ">
                     <label
@@ -64,7 +83,7 @@ function Contact() {
                     </label>
                     <input
                       type="text"
-                      name="full name"
+                      name="name"
                       required
                       placeholder="Full name"
                       size="30"
@@ -95,7 +114,7 @@ function Contact() {
                     </label>
                     <input
                       type="tel"
-                      name="Phone"
+                      name="phone"
                       placeholder="Phone"
                       size="30"
                       className="w-full p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
@@ -135,6 +154,7 @@ function Contact() {
                   <div className="text-center">
                     <input
                       type="submit"
+                      value="Send"
                       className="p-2 bg-blue-500 border rounded-sm shadow-md bg-opacity-80 solid"
                     />
                   </div>
