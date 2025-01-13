@@ -1,21 +1,28 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import BaseLayout from "../components/BaseLayout";
 import Testimonials from "../components/Testimonials";
 import ContactForm from "../components/EnquiryForm";
 
 function Home() {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return (
     <>
       <BaseLayout>
         <div className="flex flex-col w-full">
           {/* Hero Image */}
-          <div className="w-full h-3/6">
+          <div className="relative w-full">
             <img
               src="assets/images/HeroImage.svg"
               alt="Hero"
-              className="w-full "
+              className={`w-full ${isMounted ? "animate-fadeIn" : ""}`}
             ></img>
           </div>
+
           <div className="px-10 mt-8">
             <h1 className="mt-2 text-4xl font-bold text-center xl:text-7xl 3xl:text-9xl">
               Welcome to
@@ -24,8 +31,8 @@ function Home() {
             <p className="mt-8 text-3xl font-bold text-center xl:text-5xl 3xl:text-8xl">
               Why We're the Best Choice
             </p>
-            {/* Experience and Expertices */}
 
+            {/* Experience and Expertices */}
             <div className="w-full grid-cols-3 py-8 mx-auto space-x-6 xl:grid max-w-7xl">
               <div className="mt-4 border rounded-lg shadow-md">
                 <img

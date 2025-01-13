@@ -5,16 +5,16 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          default: "#FFD700",
+          DEFAULT: "#FFD700",
         },
         secondaryPrimary: {
-          default: "#062439",
+          DEFAULT: "#062439",
         },
         primaryAccent: {
-          default: "#FF5733",
+          DEFAULT: "#FF5733",
         },
         secondaryAccent: {
-          derault: "#C0C0C0",
+          DEFAULT: "#C0C0C0",
         },
       },
       fontFamily: {
@@ -22,6 +22,20 @@ module.exports = {
       },
       screens: {
         "3xl": "1920px",
+      },
+      animation: {
+        fadeIn: "fadeIn 3s ease-in-out",
+        zoomIn: "zoomIn 2s ease-in-out",
+      },
+      keyframes: {
+        fadeIn: {
+          "0%": { opacity: 0 },
+          "100%": { opacity: 1 },
+        },
+        zoomIn: {
+          "0%": { transform: "scale(0.8)" },
+          "100%": { transform: "scale(1)" },
+        },
       },
     },
   },

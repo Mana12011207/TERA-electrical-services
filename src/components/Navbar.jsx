@@ -15,13 +15,15 @@ function Navbar() {
   return (
     <>
       <div className="relative grid items-center w-full h-full grid-cols-3 lg:py-6">
-        {/* Branding Image */}
+        {/* Header Logo */}
         <div className="flex items-center col-start-1 lg:justify-center">
-          <img
-            className="w-auto h-16 "
-            src="assets/images/HeaderLogo.svg"
-            alt="Company logo"
-          ></img>
+          <a href="/">
+            <img
+              className="w-auto h-16 "
+              src="assets/images/HeaderLogo.svg"
+              alt="Company logo"
+            ></img>
+          </a>
         </div>
 
         {/* Collapsed Hamburger */}
@@ -31,7 +33,7 @@ function Navbar() {
           aria-label="Toggle menu"
         >
           {isMenuOpen ? (
-            <MdClose className="text-2xl font-bold" />
+            <MdClose className="text-2xl font-bold text-white" />
           ) : (
             <GiHamburgerMenu className="text-2xl font-bold" />
           )}
@@ -41,17 +43,17 @@ function Navbar() {
         <div className="hidden h-full lg:w-full lg:grid lg:col-start-2">
           <nav className="flex justify-center w-full ">
             <ul className="flex items-center space-x-4 text-lg font-bold 2xl:space-x-8 2xl:text-2xl 3xl:text-3xl">
-              <li className="hover:text-secondaryAccent">
-                <a href="/">Home</a>
+              <li className="hover:text-secondaryAccent-derault">
+                <a href="/">HOME</a>
               </li>
-              <li className="hover:text-secondaryAccent">
-                <a href="/about">About</a>
+              <li className="hover:text-secondaryAccent-derault">
+                <a href="/about">ABOUT</a>
               </li>
-              <li className="hover:text-secondaryAccent">
-                <a href="/services">Services</a>
+              <li className="hover:text-secondaryAccent-derault">
+                <a href="/services">SERVICES</a>
               </li>
-              <li className="hover:text-secondaryAccent">
-                <a href="/contact">Contact</a>
+              <li className="hover:text-secondaryAccent-derault">
+                <a href="/contact">CONTACT</a>
               </li>
             </ul>
           </nav>
@@ -78,14 +80,14 @@ function Navbar() {
 
       {/* Mobile Menu */}
       <div
-        className={`z-10 fixed top-0 left-0 w-full bg-secondaryAccent py-8  transform transition-transform duration-300 ${
+        className={`z-10 fixed top-0 left-0 w-full bg-secondaryPrimary-default py-8  transform transition-transform duration-300 ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         } `}
       >
         <nav className="pt-8 pl-5">
           <ul className="space-y-2 text-lg font-bold text-white ">
             <li className="">
-              <MdOutlineElectricalServices className="text-black" />
+              <MdOutlineElectricalServices />
               <a
                 href="/"
                 className="block w-full pl-5 border-b hover:text-gray-300"
@@ -94,19 +96,19 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <MdOutlineElectricalServices className="text-black" />
+              <MdOutlineElectricalServices />
               <a href="/about" className="block w-full pl-5 border-b">
                 ABOUT
               </a>
             </li>
             <li>
-              <MdOutlineElectricalServices className="text-black" />
+              <MdOutlineElectricalServices />
               <a href="/services" className="block w-full pl-5 border-b">
                 SERVICES
               </a>
             </li>
             <li>
-              <MdOutlineElectricalServices className="text-black" />
+              <MdOutlineElectricalServices />
               <a href="/contact" className="block w-full pl-5 border-b">
                 CONTACT
               </a>
