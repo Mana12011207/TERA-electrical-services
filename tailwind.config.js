@@ -11,10 +11,10 @@ module.exports = {
           default: "#062439",
         },
         primaryAccent: {
-          default: "#F5F5F5",
+          default: "#FF5733",
         },
         secondaryAccent: {
-          DEFAULT: "#C0C0C0",
+          derault: "#C0C0C0",
         },
       },
       fontFamily: {

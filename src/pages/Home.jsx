@@ -9,11 +9,11 @@ function Home() {
       <BaseLayout>
         <div className="flex flex-col w-full">
           {/* Hero Image */}
-          <div className="w-full">
+          <div className="w-full h-3/6">
             <img
               src="assets/images/HeroImage.svg"
               alt="Hero"
-              className="w-full"
+              className="w-full "
             ></img>
           </div>
           <div className="px-10 mt-8">
