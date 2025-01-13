@@ -2,6 +2,7 @@ import React from "react";
 import BaseLayout from "../components/BaseLayout";
 import FAQs from "../components/FAQs";
 import { FcElectricity } from "react-icons/fc";
+import EnquiryForm from "../components/EnquiryForm";
 
 function About() {
   return (
@@ -37,6 +38,7 @@ function About() {
             </div>
             <FAQs />
           </div>
+          <EnquiryForm />
         </div>
       </div>
     </BaseLayout>

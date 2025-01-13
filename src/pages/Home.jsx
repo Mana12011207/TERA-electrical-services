@@ -1,6 +1,7 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
 import Testimonials from "../components/Testimonials";
+import ContactForm from "../components/EnquiryForm";
 
 function Home() {
   return (
@@ -25,7 +26,7 @@ function Home() {
             </p>
             {/* Experience and Expertices */}
 
-            <div className="w-full grid-cols-3 px-10 py-8 mx-auto space-x-6 xl:grid max-w-7xl">
+            <div className="w-full grid-cols-3 py-8 mx-auto space-x-6 xl:grid max-w-7xl">
               <div className="mt-4 border rounded-lg shadow-md">
                 <img
                   src="assets/images/ExperienceAndExpertise.svg"
@@ -84,6 +85,8 @@ function Home() {
             </div>
             {/* Testimonials */}
             <Testimonials />
+            <p className="text-lg font-bold text-center">Contact Us Now!</p>
+            <ContactForm />
           </div>
         </div>
       </BaseLayout>
