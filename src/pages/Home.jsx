@@ -32,64 +32,44 @@ function Home() {
               Why We're the Best Choice
             </p>
 
-            {/* Experience and Expertices */}
-            <div className="w-full grid-cols-3 py-8 mx-auto space-x-6 xl:grid max-w-7xl">
-              <div className="mt-4 border rounded-lg shadow-md">
-                <img
-                  src="assets/images/ExperienceAndExpertise.svg"
-                  alt="Experience and Expertise"
-                  className="object-cover w-full border rounded-lg"
-                ></img>
-                <h3 className="mt-4 text-2xl font-semibold text-center underline 3xl:text-3xl">
-                  Experience and Expertise
-                </h3>
-                <p className="m-4 md:text-lg">
-                  For over 15 years, we have been involved in various electrical
+            <div className="w-full grid-cols-3 py-8 mx-auto xl:grid max-w-7xl">
+              {/* Experience and Expertices */}
+              <WhyChooseUs
+                imgSrc="/assets/images/ExperienceAndExpertise.svg"
+                alt="Experience and Expertise"
+                titile="Experience and Expertise"
+                text="For over 15 years, we have been involved in various electrical
                   works, ranging from residential projects to large-scale
                   commercial buildings and office installations. Our experienced
                   technicians provide safe and reliable services, leveraging the
                   latest technologies and knowledge to deliver tailored
-                  solutions that meet our clients' needs.
-                </p>
-              </div>
+                  solutions that meet our clients' needs."
+              />
               {/* Transparent Pricing */}
-              <div className="mt-4 border rounded-lg shadow-md">
-                <img
-                  src="assets/images/TransparentPricing.svg"
-                  alt="Transparent Pricing"
-                  className="object-cover w-full border rounded-lg"
-                ></img>
-                <h3 className="mt-4 text-2xl font-semibold text-center underline xl:text-3xl">
-                  Transparent Pricing
-                </h3>
-                <p className="m-4 text-xl">
-                  We promise transparent pricing that earns our clients' trust.
+              <WhyChooseUs
+                imgSrc="/assets/images/TransparentPricing.svg"
+                alt="Transparent Pricing"
+                titile="Transparent Pricing"
+                text="We promise transparent pricing that earns our clients' trust.
                   We provide detailed estimates upfront, ensuring there are no
                   hidden costs or unexpected charges. All fees are clearly
                   outlined, and we deliver high-quality services at prices that
-                  provide excellent value.
-                </p>
-              </div>
+                  provide excellent value."
+              />
               {/* Customer Supports */}
-              <div className="mt-4 border rounded-lg shadow-md">
-                <img
-                  src="assets/images/CustomerSupports.svg"
-                  alt="Customer supports"
-                  className="object-cover w-full border rounded-lg "
-                ></img>
-                <h3 className="mt-4 text-2xl font-semibold text-center underline 3xl:text-3xl">
-                  Customer Supports
-                </h3>
-                <p className="m-4 text-xl">
-                  We are dedicated to providing prompt and courteous service,
+              <WhyChooseUs
+                imgSrc="/assets/images/CustomerSupports.svg"
+                alt="Customer supports"
+                titile="Customer supports"
+                text="We are dedicated to providing prompt and courteous service,
                   responding to your questions and concerns with efficiency.
                   Your satisfaction is our top priority, and we strive to
                   deliver the best service possible. We value open communication
                   with our clients, keeping you informed about the progress and
-                  plans of your project.
-                </p>
-              </div>
+                  plans of your project."
+              />
             </div>
+
             {/* Testimonials */}
             <Testimonials />
             <p className="text-lg font-bold text-center">Contact Us Now!</p>
@@ -101,4 +81,19 @@ function Home() {
   );
 }
 
+function WhyChooseUs({ imgSrc, altText, title, text }) {
+  return (
+    <div className="mt-4 border rounded-lg shadow-md">
+      <img
+        src={imgSrc}
+        alt={altText}
+        className="object-cover w-full border rounded-lg"
+      />
+      <h3 className="mt-4 text-2xl font-semibold text-center underline 3xl:text-3xl">
+        {title}
+      </h3>{" "}
+      <p className="m-4 text-xl">{text}</p>
+    </div>
+  );
+}
 export default Home;
