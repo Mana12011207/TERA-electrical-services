@@ -26,6 +26,7 @@ module.exports = {
       animation: {
         fadeIn: "fadeIn 3s ease-in-out",
         zoomIn: "zoomIn 2s ease-in-out",
+        pulse: "pulse 1.5s infinite",
       },
       keyframes: {
         fadeIn: {
@@ -34,6 +35,11 @@ module.exports = {
         },
         zoomIn: {
           "0%": { transform: "scale(0.8)" },
+          "100%": { transform: "scale(1)" },
+        },
+        pulse: {
+          "20%": { transform: "scale(0.5)" },
+          "80%": { transform: "scale(1)" },
           "100%": { transform: "scale(1)" },
         },
       },

@@ -14,12 +14,12 @@ function Navbar() {
 
   return (
     <>
-      <div className="relative grid items-center w-full h-full grid-cols-3 lg:py-6">
+      <div className="relative grid items-center w-full h-full grid-cols-4 lg:p-6">
         {/* Header Logo */}
-        <div className="flex items-center col-start-1 lg:justify-center">
+        <div className="flex items-center w-auto h-16 col-span-1 lg:justify-center">
           <a href="/">
             <img
-              className="w-auto h-16 "
+              className=""
               src="assets/images/HeaderLogo.svg"
               alt="Company logo"
             ></img>
@@ -28,7 +28,7 @@ function Navbar() {
 
         {/* Collapsed Hamburger */}
         <button
-          className="z-20 col-start-3 p-2 mr-6 justify-self-end lg:hidden"
+          className="z-20 col-start-4 p-2 mr-6 justify-self-end lg:hidden"
           onClick={toggleHamburgerMenu}
           aria-label="Toggle menu"
         >
@@ -40,19 +40,19 @@ function Navbar() {
         </button>
 
         {/* Horizontal Menu for larger screens */}
-        <div className="hidden h-full lg:w-full lg:grid lg:col-start-2">
+        <div className="hidden h-full lg:w-full lg:grid lg:col-span-2 lg:col-start-2 lg:col-end-4">
           <nav className="flex justify-center w-full ">
-            <ul className="flex items-center space-x-4 text-lg font-bold 2xl:space-x-8 2xl:text-2xl 3xl:text-3xl">
-              <li className="hover:text-secondaryAccent-derault">
+            <ul className="flex items-center space-x-4 text-lg font-bold 2xl:space-x-8 2xl:text-2xl">
+              <li className="hover:text-secondaryAccent">
                 <a href="/">HOME</a>
               </li>
-              <li className="hover:text-secondaryAccent-derault">
+              <li className="hover:text-secondaryAccent">
                 <a href="/about">ABOUT</a>
               </li>
-              <li className="hover:text-secondaryAccent-derault">
+              <li className="hover:text-secondaryAccent">
                 <a href="/services">SERVICES</a>
               </li>
-              <li className="hover:text-secondaryAccent-derault">
+              <li className="hover:text-secondaryAccent">
                 <a href="/contact">CONTACT</a>
               </li>
             </ul>
@@ -60,38 +60,34 @@ function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <button className="w-full col-start-1 col-end-4 lg:col-start-3 lg:w-[60%] lg:justify-self-center lg:rounded-lg lg:py-2 bg-secondaryPrimary-default shadow-lg">
-          <div className="flex items-center justify-center space-x-4">
-            <div className="p-1 text-primary-default">
-              <BiSolidPhoneCall className="text-2xl" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-sm text-center text-white">Call Now</span>
-              <a
-                href="tel:+61411367347"
-                className="font-bold text-white text-md"
-              >
-                411 367 347
-              </a>
-            </div>
+        <button className="w-full col-span-4 shadow-lg lg:col-start-4 lg:justify-self-center lg:rounded-lg lg:p-4 bg-secondaryPrimary">
+          {" "}
+          <div className="flex items-center justify-center space-x-2">
+            <span className="text-xs text-left text-white 2xl:text-xl">
+              Call Us Today
+            </span>
+            <BiSolidPhoneCall className="text-md lg:text-3xl animate-pulse text-primary" />
+            <a
+              href="tel:+61411367347"
+              className="text-sm font-bold text-white 2xl:text-lg"
+            >
+              411 367 347
+            </a>
           </div>
         </button>
       </div>
 
       {/* Mobile Menu */}
       <div
-        className={`z-10 fixed top-0 left-0 w-full bg-secondaryPrimary-default py-8  transform transition-transform duration-300 ${
+        className={`z-10 fixed top-0 left-0 w-full bg-secondaryAccent py-8  transform transition-transform duration-300 ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full"
         } `}
       >
         <nav className="pt-8 pl-5">
           <ul className="space-y-2 text-lg font-bold text-white ">
-            <li className="">
+            <li>
               <MdOutlineElectricalServices />
-              <a
-                href="/"
-                className="block w-full pl-5 border-b hover:text-gray-300"
-              >
+              <a href="/" className="block w-full pl-5 border-b">
                 HOME
               </a>
             </li>
