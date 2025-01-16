@@ -32,24 +32,21 @@ function Home() {
               Why We're the Best Choice
             </p>
 
-            <div className="w-full grid-cols-3 py-8 mx-auto xl:grid max-w-7xl">
+            <div className="w-full grid-cols-3 gap-6 py-8 mx-auto xl:grid max-w-7xl">
               {/* Experience and Expertices */}
               <WhyChooseUs
                 imgSrc="/assets/images/ExperienceAndExpertise.svg"
-                alt="Experience and Expertise"
-                titile="Experience and Expertise"
-                text="For over 15 years, we have been involved in various electrical
-                  works, ranging from residential projects to large-scale
-                  commercial buildings and office installations. Our experienced
-                  technicians provide safe and reliable services, leveraging the
-                  latest technologies and knowledge to deliver tailored
-                  solutions that meet our clients' needs."
+                altText="Expert Experience"
+                imgSrc2="/assets/images/LightBulbIcon (64 x 64 px).svg"
+                title="Expert Experience"
+                text="With over 15 years of experienc across Sydney, we handle a range of electrical work from residential projects to large-scale commercial buildings. Our skilled technicians ensure safe and reliable services, using the latest technologies to meet our clients' specific needs."
               />
               {/* Transparent Pricing */}
               <WhyChooseUs
                 imgSrc="/assets/images/TransparentPricing.svg"
-                alt="Transparent Pricing"
-                titile="Transparent Pricing"
+                altText="Transparent Pricing"
+                imgSrc2="/assets/images/LightBulbIcon (64 x 64 px).svg"
+                title="Transparent Pricing"
                 text="We promise transparent pricing that earns our clients' trust.
                   We provide detailed estimates upfront, ensuring there are no
                   hidden costs or unexpected charges. All fees are clearly
@@ -59,14 +56,10 @@ function Home() {
               {/* Customer Supports */}
               <WhyChooseUs
                 imgSrc="/assets/images/CustomerSupports.svg"
-                alt="Customer supports"
-                titile="Customer supports"
-                text="We are dedicated to providing prompt and courteous service,
-                  responding to your questions and concerns with efficiency.
-                  Your satisfaction is our top priority, and we strive to
-                  deliver the best service possible. We value open communication
-                  with our clients, keeping you informed about the progress and
-                  plans of your project."
+                altText="Customer supports"
+                imgSrc2="/assets/images/LightBulbIcon (64 x 64 px).svg"
+                title="Customer supports"
+                text="We are committed to prompt and courteous service, efficiently addressing your questions and concerns. Your satisfaction is our top priority. We maintain open communication, keeping you updated on project progress and plans."
               />
             </div>
 
@@ -81,18 +74,21 @@ function Home() {
   );
 }
 
-function WhyChooseUs({ imgSrc, altText, title, text }) {
+function WhyChooseUs({ imgSrc, altText, title, text, imgSrc2 }) {
   return (
-    <div className="mt-4 border rounded-lg shadow-md">
+    <div className="mt-2 rounded-lg ">
       <img
         src={imgSrc}
         alt={altText}
-        className="object-cover w-full border rounded-lg"
+        className="object-cover w-full rounded-md"
       />
-      <h3 className="mt-4 text-2xl font-semibold text-center underline 3xl:text-3xl">
-        {title}
-      </h3>{" "}
-      <p className="m-4 text-xl">{text}</p>
+      <div className="flex items-center">
+        <img src={imgSrc2} alt="bulb-icon" className="animate-bounce" />
+        <h3 className="mt-4 text-lg font-bold 3xl:text-3xl">{title}</h3>
+      </div>
+      <p className="m-2 tracking-wide text-center text-gray-500 text-md">
+        {text}
+      </p>
     </div>
   );
 }
