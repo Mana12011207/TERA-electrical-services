@@ -32,7 +32,7 @@ function Home() {
               Why We're the Best Choice
             </p>
 
-            <div className="w-full grid-cols-3 gap-6 py-8 mx-auto xl:grid max-w-7xl">
+            <div className="w-full grid-cols-3 gap-6 py-8 mx-auto md:grid max-w-7xl">
               {/* Experience and Expertices */}
               <WhyChooseUs
                 imgSrc="/assets/images/ExperienceAndExpertise.svg"
@@ -86,7 +86,7 @@ function WhyChooseUs({ imgSrc, altText, title, text, imgSrc2 }) {
         <img src={imgSrc2} alt="bulb-icon" className="animate-bounce" />
         <h3 className="mt-4 text-lg font-bold 3xl:text-3xl">{title}</h3>
       </div>
-      <p className="m-2 tracking-wide text-center text-gray-500 text-md">
+      <p className="m-2 tracking-wide text-center text-gray-500 text-md lg:text-lg">
         {text}
       </p>
     </div>
