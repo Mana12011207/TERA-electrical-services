@@ -28,7 +28,7 @@ const EnquiryForm = () => {
   };
 
   return (
-    <div>
+    <div className="flex justify-center ">
       {submitted ? (
         <div className="thank-you-message">
           <p>
@@ -39,13 +39,13 @@ const EnquiryForm = () => {
       ) : (
         <form
           onSubmit={handleSubmit}
-          className="items-center mt-2 space-y-4"
+          className="items-center mt-4 space-y-4"
           ref={form}
         >
           <div className="flex flex-col items-start ">
             <label
               htmlFor="full-name"
-              className="block text-sm font-bold text-gray-700"
+              className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Name
             </label>
@@ -55,13 +55,13 @@ const EnquiryForm = () => {
               required
               placeholder="Full name"
               size="30"
-              className="w-full p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
+              className="w-full p-1 border rounded-md focus:outline-none focus:border-primary solid focus:border-4"
             />
           </div>
           <div className="flex flex-col items-start">
             <label
               htmlFor="full-name"
-              className="block text-sm font-bold text-gray-700"
+              className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Email
             </label>
@@ -70,13 +70,13 @@ const EnquiryForm = () => {
               name="email"
               placeholder="Email"
               size="30"
-              className="w-full p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
+              className="w-full p-1 border rounded-md focus:outline-none focus:border-primary solid focus:border-4"
             ></input>
           </div>
           <div className="flex flex-col items-start">
             <label
               htmlFor="full-name"
-              className="block text-sm font-bold text-gray-700"
+              className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Phone
             </label>
@@ -85,13 +85,13 @@ const EnquiryForm = () => {
               name="phone"
               placeholder="Phone"
               size="30"
-              className="w-full p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
+              className="w-full p-1 border rounded-md focus:outline-none focus:border-primary solid focus:border-4"
             ></input>
           </div>
           <div className="flex flex-col items-start">
             <label
               htmlFor="full-name"
-              className="block text-sm font-bold text-gray-700"
+              className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Address
             </label>
@@ -100,13 +100,13 @@ const EnquiryForm = () => {
               name="address"
               placeholder="Home Address"
               size="30"
-              className="w-full p-1 border rounded-sm focus:outline-none focus:border-blue-500 solid focus:border-4"
+              className="w-full p-1 border rounded-md focus:outline-none focus:border-primary solid focus:border-4"
             ></input>
           </div>
           <div className="flex flex-col items-start">
             <label
               htmlFor="full-name"
-              className="block text-sm font-bold text-gray-700"
+              className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Enter Your Message Here
             </label>
@@ -116,14 +116,14 @@ const EnquiryForm = () => {
               placeholder="Message"
               rows="5"
               cols="29"
-              className="w-full p-1 border rounded-sm solid focus:outline-none focus:border-blue-500 focus:border-4"
+              className="w-full p-1 border rounded-md solid focus:outline-none focus:border-primary focus:border-4"
             />
           </div>
           <div className="text-center">
             <input
               type="submit"
-              value="Send"
-              className="p-2 bg-blue-500 border rounded-sm shadow-md bg-opacity-80 solid"
+              value="Send message"
+              className="p-2 font-bold text-white border rounded-md shadow-lg xl:text-lg bg-secondaryPrimary bg-opacity-80 solid"
             />
           </div>
         </form>

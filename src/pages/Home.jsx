@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import BaseLayout from "../components/BaseLayout";
 import Testimonials from "../components/Testimonials";
-import ContactForm from "../components/EnquiryForm";
+import EnquiryForm from "../components/EnquiryForm";
 
 function Home() {
   const [isMounted, setIsMounted] = useState(false);
@@ -23,21 +23,22 @@ function Home() {
             ></img>
           </div>
 
-          <div className="px-10 mt-8">
-            <h1 className="mt-2 text-4xl font-bold text-center xl:text-7xl 3xl:text-9xl">
+          <div className="w-full px-10 pb-8 m-auto mt-8 max-w-7xl">
+            <h1 className="mt-2 text-3xl font-bold text-center lg:text-5xl xl:text-7xl">
               Welcome to
-              <br /> TERA Electrical Services
+              <br /> <span className=" text-primary">TERA</span> Electrical
+              Services
             </h1>
-            <p className="mt-8 text-3xl font-bold text-center xl:text-5xl 3xl:text-8xl">
-              Why We're the Best Choice
+            <p className="mt-8 mb-4 text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
+              Why We're <span className="underline"> the Best</span> Choice
             </p>
 
-            <div className="w-full grid-cols-3 gap-6 py-8 mx-auto md:grid max-w-7xl">
+            <div className="w-full grid-cols-3 gap-6 md:grid">
               {/* Experience and Expertices */}
               <WhyChooseUs
                 imgSrc="/assets/images/ExperienceAndExpertise.svg"
                 altText="Expert Experience"
-                imgSrc2="/assets/images/LightBulbIcon (64 x 64 px).svg"
+                imgSrc2="/assets/images/LightBulbIcon.svg"
                 title="Expert Experience"
                 text="With over 15 years of experienc across Sydney, we handle a range of electrical work from residential projects to large-scale commercial buildings. Our skilled technicians ensure safe and reliable services, using the latest technologies to meet our clients' specific needs."
               />
@@ -45,7 +46,7 @@ function Home() {
               <WhyChooseUs
                 imgSrc="/assets/images/TransparentPricing.svg"
                 altText="Transparent Pricing"
-                imgSrc2="/assets/images/LightBulbIcon (64 x 64 px).svg"
+                imgSrc2="/assets/images/LightBulbIcon.svg"
                 title="Transparent Pricing"
                 text="We promise transparent pricing that earns our clients' trust.
                   We provide detailed estimates upfront, ensuring there are no
@@ -57,7 +58,7 @@ function Home() {
               <WhyChooseUs
                 imgSrc="/assets/images/CustomerSupports.svg"
                 altText="Customer supports"
-                imgSrc2="/assets/images/LightBulbIcon (64 x 64 px).svg"
+                imgSrc2="/assets/images/LightBulbIcon.svg"
                 title="Customer supports"
                 text="We are committed to prompt and courteous service, efficiently addressing your questions and concerns. Your satisfaction is our top priority. We maintain open communication, keeping you updated on project progress and plans."
               />
@@ -65,8 +66,12 @@ function Home() {
 
             {/* Testimonials */}
             <Testimonials />
-            <p className="text-lg font-bold text-center">Contact Us Now!</p>
-            <ContactForm />
+            <div className="">
+              <p className="font-bold text-center text-2lg lg:text-3xl xl:text-5xl">
+                Contac Us Today!
+              </p>
+              <EnquiryForm />
+            </div>
           </div>
         </div>
       </BaseLayout>
@@ -86,7 +91,7 @@ function WhyChooseUs({ imgSrc, altText, title, text, imgSrc2 }) {
         <img src={imgSrc2} alt="bulb-icon" className="animate-bounce" />
         <h3 className="mt-4 text-lg font-bold 3xl:text-3xl">{title}</h3>
       </div>
-      <p className="m-2 tracking-wide text-center text-gray-500 text-md lg:text-lg">
+      <p className="m-2 mb-8 tracking-wide text-center text-gray-500 text-md lg:text-lg">
         {text}
       </p>
     </div>

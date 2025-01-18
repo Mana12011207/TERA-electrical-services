@@ -48,7 +48,7 @@ function FAQs() {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center ">
       {faqs.map((faq, index) => (
         <div key={index} className="w-full md:w-1/2">
           <div className="flex items-center justify-center">

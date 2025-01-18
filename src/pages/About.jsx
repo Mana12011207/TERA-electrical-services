@@ -1,7 +1,6 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
 import FAQs from "../components/FAQs";
-import { FcElectricity } from "react-icons/fc";
 import EnquiryForm from "../components/EnquiryForm";
 
 function About() {
@@ -19,7 +18,9 @@ function About() {
           </p>
         </div>
         <div className="w-full px-10 py-8 mx-auto max-w-7xl">
-          <h1 className="text-2xl font-bold text-center">Who We Are</h1>
+          <h1 className="text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
+            Who We Are
+          </h1>
           <p className="mt-2 tracking-wide text-gray-500 lg:text-lg">
             With over 15 years of hands-on experience in electrical services, We
             bring a wealth of expertise and commitment to quality and safety in
@@ -31,10 +32,18 @@ function About() {
             industry standards ensures that every job is done right the first
             time, providing peace of mind and long-lasting results.
           </p>
+
+          {/* FAQS section */}
           <div className="flex flex-col items-center p-6 mt-8 border border-solid rounded-lg">
-            <div className="flex justify-center">
-              <FcElectricity className="mr-2 text-2xl" />
-              <h2 className="text-2xl">FAQs</h2>
+            <div className="flex items-end">
+              <img
+                src="assets/images/FaqsIcon.svg"
+                alt="faqs"
+                className="pr-2 "
+              />
+              <h2 className="text-2xl font-bold lg:text-3xl xl:text-5xl">
+                FAQs
+              </h2>
             </div>
             <FAQs />
           </div>

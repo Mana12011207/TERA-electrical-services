@@ -1,7 +1,7 @@
 import React from "react";
 import BaseLayout from "../components/BaseLayout";
 import "/Users/manamisumi/tera-electrical-services/src/contact-us.css";
-import ContactForm from "../components/EnquiryForm";
+import EnquiryForm from "../components/EnquiryForm";
 
 function Contact() {
   return (
@@ -14,10 +14,11 @@ function Contact() {
               alt="Contact us"
               className="object-cover w-full h-32 md:min-h-64 "
             />
-            <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 md:text-2xl">
+            <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 lg:text-3xl xl:text-5xl">
               Contact Us
             </p>
           </div>
+
           <div className="flex flex-col items-center justify-center w-full px-10 py-8 mx-auto bg-gray-200 contact-page max-w-7xl">
             <h2 className="text-2xl font-bold text-center lg:text-3xl">
               Reach out TERA Electricians today
@@ -27,7 +28,7 @@ function Contact() {
               schedule service, or provide estimates. <br /> Just leave us a
               message below, and we’ll get back to you soon.
             </p>
-            <ContactForm></ContactForm>
+            <EnquiryForm />
           </div>
         </div>
       </BaseLayout>

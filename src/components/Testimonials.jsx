@@ -45,8 +45,8 @@ function Testimonials() {
 
   return (
     <>
-      <div className="flex flex-col items-center w-full my-12">
-        <p className="text-3xl font-bold text-center xl:text-4xl 3xl:text-7xl">
+      <div className="flex flex-col items-center w-full my-16">
+        <p className="text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
           What Our Clients Say About Us
         </p>
 
@@ -58,14 +58,16 @@ function Testimonials() {
             >
               {reviews.map((review, index) => (
                 <div key={index} className="flex-shrink-0 w-full">
-                  <div className="flex flex-col items-center p-8 tracking-wider text-gray-500 rounded-lg bg-opacity-30 bg-secondaryAccent">
+                  <div className="flex flex-col items-center p-8 tracking-wider text-gray-500 rounded-md shadow-md bg-opacity-30 bg-secondaryAccent">
                     <img
                       src="assets/images/TestimonyStars.svg"
                       alt="five star"
                       className="mb-2"
                     />
-                    <p className="tracking-wider">{review.review}</p>
-                    <div className="flex">
+                    <p className="tracking-wider text-center">
+                      {review.review}
+                    </p>
+                    <div className="flex justify-center">
                       <img src="assets/images/TestimonyIcon.svg" alt="" />
                       <p className="mt-4 font-bold text-center">
                         {review.name}
