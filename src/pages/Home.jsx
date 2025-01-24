@@ -19,7 +19,7 @@ function Home() {
             <img
               src="assets/images/HeroImage.svg"
               alt="Hero"
-              className={`w-full ${isMounted ? "animate-fadeIn" : ""}`}
+              className={`w-full ${isMounted ? "animate-zoomIn" : ""}`}
             ></img>
           </div>
 

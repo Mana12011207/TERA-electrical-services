@@ -55,7 +55,7 @@ const EnquiryForm = () => {
               required
               placeholder="Full name"
               size="30"
-              className="w-full p-1 border rounded-md focus:outline-none focus:border-primary solid focus:border-4"
+              className="w-full p-1 border rounded-md border-secondaryPrimary focus:outline-none focus:border-primary solid focus:border-4"
             />
           </div>
           <div className="flex flex-col items-start">
@@ -70,7 +70,7 @@ const EnquiryForm = () => {
               name="email"
               placeholder="Email"
               size="30"
-              className="w-full p-1 border rounded-md focus:outline-none focus:border-primary solid focus:border-4"
+              className="w-full p-1 border rounded-md border-secondaryPrimary focus:outline-none focus:border-primary solid focus:border-4"
             ></input>
           </div>
           <div className="flex flex-col items-start">
@@ -85,7 +85,7 @@ const EnquiryForm = () => {
               name="phone"
               placeholder="Phone"
               size="30"
-              className="w-full p-1 border rounded-md focus:outline-none focus:border-primary solid focus:border-4"
+              className="w-full p-1 border rounded-md border-secondaryPrimary focus:outline-none focus:border-primary solid focus:border-4"
             ></input>
           </div>
           <div className="flex flex-col items-start">
@@ -100,7 +100,7 @@ const EnquiryForm = () => {
               name="address"
               placeholder="Home Address"
               size="30"
-              className="w-full p-1 border rounded-md focus:outline-none focus:border-primary solid focus:border-4"
+              className="w-full p-1 border rounded-md border-secondaryPrimary focus:outline-none focus:border-primary solid focus:border-4"
             ></input>
           </div>
           <div className="flex flex-col items-start">
@@ -116,14 +116,15 @@ const EnquiryForm = () => {
               placeholder="Message"
               rows="5"
               cols="29"
-              className="w-full p-1 border rounded-md solid focus:outline-none focus:border-primary focus:border-4"
+              className="w-full p-1 border rounded-md border-secondaryPrimary solid focus:outline-none focus:border-primary focus:border-4"
             />
           </div>
           <div className="text-center">
             <input
               type="submit"
               value="Send message"
-              className="p-2 font-bold text-white border rounded-md shadow-lg xl:text-lg bg-secondaryPrimary bg-opacity-80 solid"
+              className="p-2 font-bold text-white border rounded-md shadow-lg cursor-pointer xl:text-lg bg-secondaryPrimary bg-opacity-80 solid hover:bg-slate-800"
+              style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
             />
           </div>
         </form>

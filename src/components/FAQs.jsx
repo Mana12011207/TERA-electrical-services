@@ -50,16 +50,16 @@ function FAQs() {
   return (
     <div className="flex flex-col items-center ">
       {faqs.map((faq, index) => (
-        <div key={index} className="w-full md:w-1/2">
-          <div className="flex items-center justify-center">
+        <div key={index} className="w-full md:w-[70%] ">
+          <div className="flex items-center justify-center w-full ">
             <p className="my-2 mr-2 tracking-wide text-center lg:text-xl">
               {faq.question}
             </p>
             <button onClick={() => toggleAnswer(index)}>
               {visibleIndex === index ? (
-                <FaMinusCircle className="text-lg lg:text-xl" />
+                <FaMinusCircle className="text-lg lg:text-2xl text-primaryAccent" />
               ) : (
-                <FaPlusCircle className="text-lg lg:text-xl" />
+                <FaPlusCircle className="text-lg lg:text-2xl text-primaryAccent" />
               )}
             </button>
           </div>

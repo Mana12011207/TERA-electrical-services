@@ -34,20 +34,27 @@ function About() {
           </p>
 
           {/* FAQS section */}
-          <div className="flex flex-col items-center p-6 mt-8 border border-solid rounded-lg">
-            <div className="flex items-end">
-              <img
-                src="assets/images/FaqsIcon.svg"
-                alt="faqs"
-                className="pr-2 "
-              />
-              <h2 className="text-2xl font-bold lg:text-3xl xl:text-5xl">
-                FAQs
-              </h2>
+          <div className="mt-8 lg:flex">
+            <div className="flex flex-col items-center p-6 border rounded-lg shadow-lg lg:w-1/2 border-secondaryPrimary">
+              <div className="flex">
+                <img
+                  src="assets/images/FaqsIcon.svg"
+                  alt="faqs"
+                  className="pr-2"
+                />
+                <h2 className="self-end text-2xl font-bold lg:text-3xl xl:text-5xl">
+                  FAQs
+                </h2>
+              </div>
+              <FAQs />
             </div>
-            <FAQs />
+            <div className="flex flex-col lg:w-1/2">
+              <h3 className="mt-10 mb-2 text-xl font-bold text-center lg:text-2xl xl:text-3xl">
+                Have a question? Contact us.
+              </h3>
+              <EnquiryForm />
+            </div>
           </div>
-          <EnquiryForm />
         </div>
       </div>
     </BaseLayout>

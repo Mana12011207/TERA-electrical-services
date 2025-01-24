@@ -58,7 +58,7 @@ function Testimonials() {
             >
               {reviews.map((review, index) => (
                 <div key={index} className="flex-shrink-0 w-full">
-                  <div className="flex flex-col items-center p-8 tracking-wider text-gray-500 rounded-md shadow-md bg-opacity-30 bg-secondaryAccent">
+                  <div className="flex flex-col items-center p-8 tracking-wider text-gray-500 rounded-md shadow-md bg-opacity-20 bg-secondaryAccent">
                     <img
                       src="assets/images/TestimonyStars.svg"
                       alt="five star"
