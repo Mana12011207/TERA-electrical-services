@@ -53,44 +53,69 @@ function Services() {
               ]}
             />
           </div>
-          <h2 className="mt-16 text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
-            Start in 3 Simple Steps
-          </h2>
-          <p className="tracking-wide text-center">
-            Our streamlined approach ensures you receive top-notch support at
-            every phase, delivering exceptional service from the initial
-            consultation to project completion.
-          </p>
-          <img src="assets/images/GetInTouchIcon.svg" alt="Get in touch"></img>
-          <h3 className="mt-8 text-lg font-bold text-center lg:text-2xl xl:text-4xl">
-            Reach Out
-          </h3>
-          <p className="tracking-wide text-center">
-            Contact us via phone or fill out our online form. We're here to
-            listen to your electrical needs and provide solutions. Your path to
-            a secure and efficient electrical system begins with just one step.
-          </p>
-          <img src="assets/images/InspectionIcon.svg" alt="Inspection"></img>
-          <h3 className="mt-8 text-lg font-bold text-center lg:text-2xl xl:text-4xl">
-            Inspection & Quote
-          </h3>
-          <p className="tracking-wide text-center">
-            We'll visit your location for a comprehensive inspection to
-            determine your electrical needs. Afterwards, we’ll provide a
-            detailed estimate for the required services.
-          </p>
-          <img
-            src="assets/images/StartWorkingIcon.svg"
-            alt="We start working"
-          ></img>
-          <h3 className="mt-8 text-lg font-bold text-center lg:text-2xl xl:text-4xl">
-            Our Team Starts Working
-          </h3>
-          <p className="tracking-wide text-center">
-            After finalizing the details, our team will begin the work. We
-            guarantee that all electrical installations and repairs will be
-            conducted safely and efficiently, meeting the highest standards.
-          </p>
+
+          {/* Start in 3 simple steps */}
+          <div className="w-full">
+            <div className="">
+              <h2 className="mt-16 text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
+                Start in 3 Simple Steps
+              </h2>
+              <p className="tracking-wide text-center">
+                Our streamlined approach ensures you receive top-notch support
+                at every phase, delivering exceptional service from the initial
+                consultation to project completion.
+              </p>
+              {/* Get in touch */}
+              <div className="flex flex-col items-center w-full">
+                <img
+                  src="assets/images/GetInTouchIcon.svg"
+                  alt="Get in touch"
+                  className="mt-8 mb-2 "
+                ></img>
+                <h3 className="text-lg font-bold text-center lg:text-2xl xl:text-4xl">
+                  Reach Out
+                </h3>
+                <p className="tracking-wide text-center text-gray-500">
+                  Contact us via phone or fill out our online form. We're here
+                  to listen to your electrical needs and provide solutions. Your
+                  path to a secure and efficient electrical system begins with
+                  just one step.
+                </p>
+              </div>
+              {/* Inspection */}
+              <div className="flex flex-col items-center w-full">
+                <img
+                  src="assets/images/InspectionIcon.svg"
+                  alt="Inspection"
+                  className="mt-8 mb-2"
+                ></img>
+                <h3 className="text-lg font-bold text-center lg:text-2xl xl:text-4xl">
+                  Inspection & Quote
+                </h3>
+                <p className="tracking-wide text-center text-gray-500">
+                  We'll visit your location for a comprehensive inspection to
+                  determine your electrical needs. Afterwards, we’ll provide a
+                  detailed estimate for the required services.
+                </p>
+              </div>
+              <div className="flex flex-col items-center w-full">
+                <img
+                  src="assets/images/StartWorkingIcon.svg"
+                  alt="We start working"
+                  className="mt-8 mb-2"
+                ></img>
+                <h3 className="text-lg font-bold text-center lg:text-2xl xl:text-4xl">
+                  Our Team Starts Working
+                </h3>
+                <p className="tracking-wide text-center text-gray-500">
+                  After finalizing the details, our team will begin the work. We
+                  guarantee that all electrical installations and repairs will
+                  be conducted safely and efficiently, meeting the highest
+                  standards.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </BaseLayout>
