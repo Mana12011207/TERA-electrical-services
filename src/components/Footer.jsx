@@ -12,7 +12,7 @@ function Footer() {
           <div className="flex items-center sm:col-start-1 sm:row-start-1">
             <img
               className="w-auto"
-              src="assets/images/FooterLogo.png"
+              src="assets/images/FooterLogo.svg"
               alt="Company logo"
             ></img>
           </div>
@@ -50,7 +50,7 @@ function Footer() {
           <div className="w-full mt-4 text-white justify-items-center 2xl:justify-items-start">
             <p className="text-2xl font-bold lg:text-3xl">Contact us</p>
             <button className="flex flex-col items-center mt-2 hover:text-secondaryAccent 2xl:flex-row">
-              <BsFillTelephoneForwardFill className="box-border p-1 text-2xl text-black bg-white rounded-full 2xl:text-3xl" />
+              <BsFillTelephoneForwardFill className="box-border p-1 text-2xl rounded-full text-secondaryPrimary bg-primaryAccent 2xl:text-3xl" />
               <a
                 href="tel:+61411367347"
                 className="mt-1 text-lg xl:text-2xl 2xl:ml-2"
@@ -60,7 +60,7 @@ function Footer() {
             </button>
 
             <button className="flex flex-col items-center mt-4 hover:text-secondaryAccent 2xl:flex-row 2xl:items-start">
-              <MdEmail className="box-border p-1 text-2xl text-black bg-white rounded-full 2xl:text-3xl" />
+              <MdEmail className="box-border p-1 text-2xl rounded-full text-secondaryPrimary bg-primaryAccent 2xl:text-3xl" />
               <a
                 href="mailto:j_huy@hotmail.com"
                 className="text-lg xl:text-2xl 2xl:ml-2"

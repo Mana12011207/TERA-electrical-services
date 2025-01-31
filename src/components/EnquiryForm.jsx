@@ -123,7 +123,7 @@ const EnquiryForm = () => {
             <input
               type="submit"
               value="Send message"
-              className="p-2 font-bold text-white border rounded-md shadow-lg cursor-pointer xl:text-lg bg-secondaryPrimary bg-opacity-80 solid hover:bg-slate-800"
+              className="p-6 font-bold text-white border rounded-md shadow-lg cursor-pointer xl:text-lg bg-secondaryPrimary bg-opacity-80 solid hover:bg-slate-800"
               style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
             />
           </div>

@@ -12,14 +12,21 @@ function Services() {
             alt="Services"
             className="object-cover w-full h-32 md:min-h-60"
           />
-          <p className="absolute inset-0 flex items-center justify-center text-lg font-bold text-white bg-black bg-opacity-40 md:text-2xl">
+          <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 lg:text-3xl xl:text-5xl">
             Our Services
           </p>
         </div>
         <div className="w-full px-10 py-8 mx-auto max-w-7xl">
           <h1 className="mt-6 text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
-            Residential and Commercial
+            Commercial and Residential
           </h1>
+          <p className="my-6 tracking-wide text-center lg:text-lg ">
+            With years of experience as professionals, we handle a wide range of
+            electrical work, from commercial facilities to private homes. <br />
+            If you have any questions, please feel free to contact us.
+          </p>
+
+          {/* Services */}
           <div className="w-full grid-cols-3 mb-6 lg:grid lg:gap-6">
             <ServiceSection
               imgSrc="assets/images/RepairAndRenewals.svg"
@@ -56,23 +63,25 @@ function Services() {
 
           {/* Start in 3 simple steps */}
           <div className="w-full">
-            <div className="">
-              <h2 className="mt-16 text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
-                Start in 3 Simple Steps
-              </h2>
-              <p className="tracking-wide text-center">
-                Our streamlined approach ensures you receive top-notch support
-                at every phase, delivering exceptional service from the initial
-                consultation to project completion.
-              </p>
-              {/* Get in touch */}
-              <div className="flex flex-col items-center w-full">
+            <h2 className="mt-16 text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
+              Start in 3 Simple Steps
+            </h2>
+            <p className="my-6 tracking-wide text-center lg:text-lg">
+              Our streamlined approach ensures you receive top-notch support at
+              every phase, <br />
+              delivering exceptional service from the initial consultation to
+              project completion.
+            </p>
+
+            {/* Get in touch */}
+            <div className="w-full lg:grid lg:grid-cols-3 lg:gap-6">
+              <div className="flex flex-col items-center">
                 <img
                   src="assets/images/GetInTouchIcon.svg"
                   alt="Get in touch"
                   className="mt-8 mb-2 "
                 ></img>
-                <h3 className="text-lg font-bold text-center lg:text-2xl xl:text-4xl">
+                <h3 className="text-lg font-bold text-center lg:text-2xl xl:text-3xl">
                   Reach Out
                 </h3>
                 <p className="tracking-wide text-center text-gray-500">
@@ -83,13 +92,13 @@ function Services() {
                 </p>
               </div>
               {/* Inspection */}
-              <div className="flex flex-col items-center w-full">
+              <div className="flex flex-col items-center">
                 <img
                   src="assets/images/InspectionIcon.svg"
                   alt="Inspection"
                   className="mt-8 mb-2"
                 ></img>
-                <h3 className="text-lg font-bold text-center lg:text-2xl xl:text-4xl">
+                <h3 className="text-lg font-bold text-center lg:text-2xl xl:text-3xl">
                   Inspection & Quote
                 </h3>
                 <p className="tracking-wide text-center text-gray-500">
@@ -98,13 +107,13 @@ function Services() {
                   detailed estimate for the required services.
                 </p>
               </div>
-              <div className="flex flex-col items-center w-full">
+              <div className="flex flex-col items-center">
                 <img
                   src="assets/images/StartWorkingIcon.svg"
                   alt="We start working"
                   className="mt-8 mb-2"
                 ></img>
-                <h3 className="text-lg font-bold text-center lg:text-2xl xl:text-4xl">
+                <h3 className="text-lg font-bold text-center lg:text-2xl xl:text-3xl">
                   Our Team Starts Working
                 </h3>
                 <p className="tracking-wide text-center text-gray-500">
@@ -115,6 +124,13 @@ function Services() {
                 </p>
               </div>
             </div>
+          </div>
+          <div className="flex justify-center">
+            <a href="/contact">
+              <button className="p-8 mt-20 mb-10 font-bold text-white shadow-2xl rounded-3xl bg-primaryAccent lg:text-2xl hover:animate-bounce ">
+                CONTACT US NOW
+              </button>
+            </a>
           </div>
         </div>
       </div>
@@ -138,7 +154,7 @@ function ServiceSection({ imgSrc, altText, title, items }) {
       <ul className="mt-2 text-sm tracking-wide text-gray-500 md:text-xl">
         {items.map((item, index) => (
           <li key={index} className="flex items-center">
-            <ImCheckmark className="mr-1 text-xs text-yellow-400 " />
+            <ImCheckmark className="mr-1 text-yellow-400 text-md " />
             {item}
           </li>
         ))}

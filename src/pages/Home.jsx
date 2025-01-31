@@ -23,7 +23,7 @@ function Home() {
             ></img>
           </div>
 
-          <div className="w-full px-10 pb-8 m-auto mt-8 max-w-7xl">
+          <div className="w-full px-10 pb-8 m-auto mt-8 mb-10 max-w-7xl">
             <h1 className="mt-2 text-3xl font-bold text-center lg:text-5xl xl:text-7xl">
               Welcome to
               <br /> <span className=" text-primary">TERA</span> Electrical
@@ -65,12 +65,14 @@ function Home() {
             </div>
 
             {/* Testimonials */}
-            <Testimonials />
-            <div className="">
-              <p className="font-bold text-center text-2lg lg:text-3xl xl:text-5xl">
-                Contac Us Today!
-              </p>
-              <EnquiryForm />
+            <div className="w-full p-8 mt-10 bg-gray-100 rounded-sm lg:flex">
+              <Testimonials />
+              <div className="">
+                <p className="text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
+                  Contac Us Today!
+                </p>
+                <EnquiryForm />
+              </div>
             </div>
           </div>
         </div>

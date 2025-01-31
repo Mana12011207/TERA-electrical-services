@@ -13,7 +13,7 @@ function About() {
             alt="About us"
             className="object-cover w-full h-32 md:min-h-64 "
           />
-          <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 md:text-2xl">
+          <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 lg:text-3xl xl:text-5xl">
             About Us
           </p>
         </div>
@@ -34,7 +34,7 @@ function About() {
           </p>
 
           {/* FAQS section */}
-          <div className="mt-8 lg:flex">
+          <div className="my-10 lg:flex">
             <div className="flex flex-col items-center p-6 border rounded-lg shadow-lg lg:w-1/2 border-secondaryPrimary">
               <div className="flex">
                 <img
@@ -48,6 +48,8 @@ function About() {
               </div>
               <FAQs />
             </div>
+
+            {/* EnquiryForm */}
             <div className="flex flex-col lg:w-1/2">
               <h3 className="mt-10 mb-2 text-xl font-bold text-center lg:text-2xl xl:text-3xl">
                 Have a question? Contact us.
