@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import "/Users/manamisumi/tera-electrical-services/src/enquiry.css";
 
@@ -27,11 +27,36 @@ const EnquiryForm = () => {
       );
   };
 
+  const handleKeyDown = (e) => {
+    if (e.key === "Escape") {
+      setSubmitted(false);
+    }
+  };
+
+  const handleClick = () => {
+    setSubmitted(false);
+  };
+
+  useEffect(() => {
+    if (submitted) {
+      window.addEventListener("keydown", handleKeyDown);
+      window.addEventListener("click", handleClick);
+    } else {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("click", handleClick);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("click", handleClick);
+    };
+  }, [submitted]);
+
   return (
     <div className="flex justify-center ">
       {submitted ? (
         <div className="thank-you-message">
-          <p>
+          <p className="text-primaryAccent">
             Thank you for contacting us! <br />
             We'll get back to you at the earliest opportunity.
           </p>
