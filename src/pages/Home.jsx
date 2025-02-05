@@ -66,8 +66,10 @@ function Home() {
 
             {/* Testimonials */}
             <div className="w-full p-8 mt-10 bg-gray-100 rounded-sm lg:flex">
-              <Testimonials />
-              <div className="">
+              <div className="lg:w-1/2">
+                <Testimonials />
+              </div>
+              <div className="lg:w-1/2">
                 <p className="text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
                   Contac Us Today!
                 </p>

@@ -60,16 +60,16 @@ function Navbar() {
         </div>
 
         {/* CTA Button */}
-        <button className="w-full col-span-4 shadow-lg lg:col-start-4 lg:justify-self-center lg:rounded-lg lg:p-4 bg-secondaryPrimary">
+        <button className="w-full col-span-4 shadow-lg min-h-10 lg:col-start-4 justify-self-center lg:rounded-lg lg:p-4 bg-secondaryPrimary">
           {" "}
           <div className="flex items-center justify-center space-x-2">
-            <span className="text-xs text-left text-white 2xl:text-xl">
+            <span className="text-left text-white text-md 2xl:text-xl">
               Call Us Today
             </span>
             <BiSolidPhoneCall className="text-md lg:text-3xl animate-pulse text-primary" />
             <a
               href="tel:+61411367347"
-              className="text-sm font-bold text-white 2xl:text-lg"
+              className="font-bold text-white text-md 2xl:text-lg"
             >
               411 367 347
             </a>
