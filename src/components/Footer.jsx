@@ -47,7 +47,7 @@ function Footer() {
           </div>
 
           {/* CTA Button */}
-          <div className="w-full mt-4 text-white">
+          <div className="flex flex-col items-center w-full mt-4 text-white">
             <div>
               <p className="text-2xl font-bold lg:text-3xl">Contact info</p>
               <button className="flex flex-col items-center mt-2 hover:text-secondaryAccent 2xl:flex-row">
@@ -60,17 +60,15 @@ function Footer() {
                 </a>
               </button>
             </div>
-            <div className="">
-              <button className="mt-4 hover:text-secondaryAccent 2xl:flex-row 2xl:items-start">
-                <MdEmail className="box-border p-1 text-2xl rounded-full text-secondaryPrimary bg-primaryAccent 2xl:text-3xl" />
-                <a
-                  href="mailto:teraelectrical@outlook.com"
-                  className="text-lg xl:text-2xl 2xl:ml-2"
-                >
-                  teraelectrical@outlook.com
-                </a>
-              </button>
-            </div>
+            <button className="mt-4 2xl:flex hover:text-secondaryAccent justify-items-center 2xl:flex-row">
+              <MdEmail className="box-border p-1 text-2xl rounded-full text-secondaryPrimary bg-primaryAccent 2xl:text-3xl" />
+              <a
+                href="mailto:teraelectrical@outlook.com"
+                className="text-lg xl:text-2xl 2xl:ml-2"
+              >
+                teraelectrical@outlook.com
+              </a>
+            </button>
           </div>
         </div>
         <hr className="border-t-2 border-white" />
