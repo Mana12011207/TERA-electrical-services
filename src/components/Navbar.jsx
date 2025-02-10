@@ -71,7 +71,7 @@ function Navbar() {
               href="tel:+61411367347"
               className="font-bold text-white text-md 2xl:text-lg"
             >
-              411 367 347
+              +61 411 367 347
             </a>
           </div>
         </button>
