@@ -20,7 +20,7 @@ function Navbar() {
           <a href="/">
             <img
               className=""
-              src="assets/images/HeaderLogo.svg"
+              src="assets/images/logos/HeaderLogo.svg"
               alt="Company logo"
             ></img>
           </a>

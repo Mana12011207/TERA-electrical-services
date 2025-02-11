@@ -8,16 +8,26 @@ function About() {
     <BaseLayout>
       <div className="flex flex-col items-center w-full">
         <div className="relative w-full ">
-          <img
-            src="assets/images/AboutUS.svg"
-            alt="About us"
-            className="object-cover w-full h-32 md:min-h-64 "
-          />
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcSet="/assets/images/small/about-hero-image-small.jpg"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcSet="/assets/images/medium/about-hero-image-medium.jpg"
+            />
+            <img
+              src="/assets/images/large/about-hero-image-large.jpg"
+              alt="About us"
+              className="object-cover object-center w-full h-32 md:min-h-64 lg:h-72"
+            />
+          </picture>
           <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 lg:text-3xl xl:text-5xl">
             About Us
           </p>
         </div>
-        <div className="w-full px-10 py-8 mx-auto max-w-7xl">
+        <div className="w-full px-10 py-8 mx-auto mt-8 max-w-7xl">
           <h1 className="text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
             Who We Are
           </h1>
@@ -34,11 +44,11 @@ function About() {
           </p>
 
           {/* FAQS section */}
-          <div className="my-10 lg:flex">
+          <div className="my-12 lg:flex">
             <div className="flex flex-col items-center p-6 border rounded-lg shadow-lg lg:w-1/2 border-secondaryPrimary">
               <div className="flex">
                 <img
-                  src="assets/images/FaqsIcon.svg"
+                  src="assets/images/icons/FaqsIcon.svg"
                   alt="faqs"
                   className="pr-2"
                 />
@@ -51,7 +61,7 @@ function About() {
 
             {/* EnquiryForm */}
             <div className="flex flex-col lg:w-1/2">
-              <h3 className="mt-10 mb-2 text-xl font-bold text-center lg:text-2xl xl:text-3xl">
+              <h3 className="mt-12 mb-2 text-xl font-bold text-center lg:mt-4 lg:text-2xl xl:text-3xl">
                 Have a question? Contact us.
               </h3>
               <EnquiryForm />

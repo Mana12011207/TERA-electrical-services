@@ -12,7 +12,7 @@ function Footer() {
           <div className="flex items-center sm:col-start-1 sm:row-start-1">
             <img
               className="w-auto"
-              src="assets/images/FooterLogo.svg"
+              src="assets/images/logos/FooterLogo.svg"
               alt="Company logo"
             ></img>
           </div>

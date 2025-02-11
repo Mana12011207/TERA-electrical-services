@@ -7,11 +7,21 @@ function Services() {
     <BaseLayout>
       <div className="w-full">
         <div className="relative w-full">
-          <img
-            src="assets/images/Services.svg"
-            alt="Services"
-            className="object-cover w-full h-32 md:min-h-60"
-          />
+          <picture>
+            <source
+              media="(max-width: 640px)"
+              srcSet="/assets/images/small/service-hero-image-small.jpg"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcSet="/assets/images/medium/service-hero-image-medium.jpg"
+            />
+            <img
+              src="/assets/images/large/service-hero-image-large.jpg"
+              alt="About us"
+              className="object-cover object-center w-full h-32 md:min-h-64 lg:h-72"
+            />
+          </picture>
           <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 lg:text-3xl xl:text-5xl">
             Our Services
           </p>

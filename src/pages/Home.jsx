@@ -17,7 +17,7 @@ function Home() {
           {/* Hero Image */}
           <div className="relative w-full">
             <img
-              src="assets/images/HeroImage.svg"
+              src="assets/images/HeroImage.png"
               alt="Hero"
               className={`w-full ${isMounted ? "animate-zoomIn" : ""}`}
             ></img>
@@ -36,17 +36,17 @@ function Home() {
             <div className="w-full grid-cols-3 gap-6 md:grid">
               {/* Experience and Expertices */}
               <WhyChooseUs
-                imgSrc="/assets/images/ExperienceAndExpertise.svg"
+                imgSrc="assets/images/ExperienceAndExpertise.png"
                 altText="Expert Experience"
-                imgSrc2="/assets/images/LightBulbIcon.svg"
+                imgSrc2="/assets/images//icons/LightBulbIcon.svg"
                 title="Expert Experience"
                 text="With over 15 years of experienc across Sydney, we handle a range of electrical work from residential projects to large-scale commercial buildings. Our skilled technicians ensure safe and reliable services, using the latest technologies to meet our clients' specific needs."
               />
               {/* Transparent Pricing */}
               <WhyChooseUs
-                imgSrc="/assets/images/TransparentPricing.svg"
+                imgSrc="/assets/images/TransparentPricing.png"
                 altText="Transparent Pricing"
-                imgSrc2="/assets/images/LightBulbIcon.svg"
+                imgSrc2="/assets/images/icons/LightBulbIcon.svg"
                 title="Transparent Pricing"
                 text="We promise transparent pricing that earns our clients' trust.
                   We provide detailed estimates upfront, ensuring there are no
@@ -56,9 +56,9 @@ function Home() {
               />
               {/* Customer Supports */}
               <WhyChooseUs
-                imgSrc="/assets/images/CustomerSupports.svg"
+                imgSrc="/assets/images/CustomerSupports.png"
                 altText="Customer supports"
-                imgSrc2="/assets/images/LightBulbIcon.svg"
+                imgSrc2="/assets/images/icons/LightBulbIcon.svg"
                 title="Customer supports"
                 text="We are committed to prompt and courteous service, efficiently addressing your questions and concerns. Your satisfaction is our top priority. We maintain open communication, keeping you updated on project progress and plans."
               />

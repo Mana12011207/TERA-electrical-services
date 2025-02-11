@@ -9,11 +9,21 @@ function Contact() {
       <BaseLayout>
         <div className="flex flex-col w-full">
           <div className="relative w-full">
-            <img
-              src="assets/images/ContactUs.svg"
-              alt="Contact us"
-              className="object-cover w-full h-32 md:min-h-64 "
-            />
+            <picture>
+              <source
+                media="(max-width: 640px)"
+                srcSet="/assets/images/small/contact-hero-image-small.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcSet="/assets/images/medium/contact-hero-image-medium.jpg"
+              />
+              <img
+                src="/assets/images/large/contact-hero-image-large.jpg"
+                alt="Contact us"
+                className="object-cover object-center w-full h-32 md:min-h-64 lg:h-72"
+              />
+            </picture>
             <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 lg:text-3xl xl:text-5xl">
               Contact Us
             </p>
