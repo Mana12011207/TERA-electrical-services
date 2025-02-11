@@ -87,7 +87,7 @@ function Services() {
             <div className="w-full lg:grid lg:grid-cols-3 lg:gap-6">
               <div className="flex flex-col items-center">
                 <img
-                  src="assets/images/GetInTouchIcon.svg"
+                  src="assets/images/icons/GetInTouchIcon.svg"
                   alt="Get in touch"
                   className="mt-8 mb-2 "
                 ></img>
@@ -104,7 +104,7 @@ function Services() {
               {/* Inspection */}
               <div className="flex flex-col items-center">
                 <img
-                  src="assets/images/InspectionIcon.svg"
+                  src="assets/images/icons/InspectionIcon.svg"
                   alt="Inspection"
                   className="mt-8 mb-2"
                 ></img>
@@ -119,7 +119,7 @@ function Services() {
               </div>
               <div className="flex flex-col items-center">
                 <img
-                  src="assets/images/StartWorkingIcon.svg"
+                  src="assets/images/icons/StartWorkingIcon.svg"
                   alt="We start working"
                   className="mt-8 mb-2"
                 ></img>

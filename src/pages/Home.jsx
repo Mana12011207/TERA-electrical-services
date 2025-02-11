@@ -16,11 +16,21 @@ function Home() {
         <div className="flex flex-col w-full">
           {/* Hero Image */}
           <div className="relative w-full">
-            <img
-              src="assets/images/HeroImage.png"
-              alt="Hero"
-              className={`w-full ${isMounted ? "animate-zoomIn" : ""}`}
-            ></img>
+            <picture>
+              <source
+                media="(max-width: 640px)"
+                srcSet="/assets/images/small/hero-image-small.jpg"
+              />
+              <source
+                media="(max-width: 1024px)"
+                srcSet="/assets/images/medium/hero-image-medium.jpg"
+              />
+              <img
+                src="/assets/images/large/hero-image-large.jpg"
+                alt="hero"
+                className="object-cover object-center w-full h-38 md:min-h-64 lg:h-72"
+              />
+            </picture>
           </div>
 
           <div className="w-full px-10 pb-8 m-auto mt-8 mb-10 max-w-7xl">

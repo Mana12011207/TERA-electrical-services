@@ -60,7 +60,7 @@ function Testimonials() {
                 <div key={index} className="flex-shrink-0 w-full">
                   <div className="flex flex-col items-center p-8 tracking-wider text-gray-500 bg-white rounded-sm shadow-xl">
                     <img
-                      src="assets/images/TestimonyStars.svg"
+                      src="assets/images/icons/TestimonyStars.svg"
                       alt="five star"
                       className="mb-2"
                     />
