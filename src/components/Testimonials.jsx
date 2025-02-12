@@ -68,7 +68,7 @@ function Testimonials() {
                       {review.review}
                     </p>
                     <div className="flex justify-center">
-                      <img src="assets/images/TestimonyIcon.svg" alt="" />
+                      <img src="assets/images/icons/TestimonyIcon.svg" alt="" />
                       <p className="mt-4 font-bold text-center">
                         {review.name}
                       </p>
