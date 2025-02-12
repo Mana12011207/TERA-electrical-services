@@ -39,7 +39,7 @@ function Services() {
           {/* Services */}
           <div className="w-full grid-cols-3 mb-6 lg:grid lg:gap-6">
             <ServiceSection
-              imgSrc="assets/images/RepairAndRenewals.svg"
+              imgSrc="assets/images/repair-renewals.jpg"
               altText="Repair and Renewals"
               title="Repair and Renewals"
               items={[
@@ -49,7 +49,7 @@ function Services() {
               ]}
             />
             <ServiceSection
-              imgSrc="assets/images/Installation.svg"
+              imgSrc="assets/images/installation.jpg"
               altText="Installation"
               title="Installation"
               items={[
@@ -60,7 +60,7 @@ function Services() {
               ]}
             />
             <ServiceSection
-              imgSrc="assets/images/InspectionAndTesting.svg"
+              imgSrc="assets/images/inspection-testing.jpg"
               altText="Inspection and Testing"
               title="Inspection and Testing"
               items={[

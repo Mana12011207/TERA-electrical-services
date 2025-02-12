@@ -28,7 +28,9 @@ function Home() {
               <img
                 src="/assets/images/large/hero-image-large.jpg"
                 alt="hero"
-                className="object-cover object-center w-full h-38 md:min-h-64 lg:h-72"
+                className={`object-fit object-center w-full h-38 md:min-h-64 lg:h-72 ${
+                  isMounted ? "animate-fadeIn" : ""
+                }`}
               />
             </picture>
           </div>
@@ -46,7 +48,7 @@ function Home() {
             <div className="w-full grid-cols-3 gap-6 md:grid">
               {/* Experience and Expertices */}
               <WhyChooseUs
-                imgSrc="assets/images/ExperienceAndExpertise.png"
+                imgSrc="assets/images/experience-expertise.jpg"
                 altText="Expert Experience"
                 imgSrc2="/assets/images//icons/LightBulbIcon.svg"
                 title="Expert Experience"
@@ -54,7 +56,7 @@ function Home() {
               />
               {/* Transparent Pricing */}
               <WhyChooseUs
-                imgSrc="/assets/images/TransparentPricing.png"
+                imgSrc="assets/images/transparent-pricing.jpg"
                 altText="Transparent Pricing"
                 imgSrc2="/assets/images/icons/LightBulbIcon.svg"
                 title="Transparent Pricing"
@@ -66,7 +68,7 @@ function Home() {
               />
               {/* Customer Supports */}
               <WhyChooseUs
-                imgSrc="/assets/images/CustomerSupports.png"
+                imgSrc="assets/images/customer-supoports.jpg"
                 altText="Customer supports"
                 imgSrc2="/assets/images/icons/LightBulbIcon.svg"
                 title="Customer supports"
