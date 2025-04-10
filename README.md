@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+![Home page](/public/assets/images/home_teraelectricalservices.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# TERA Electrical Services
 
-## Available Scripts
+### Welcome to TERA Electrical Services! Our platform offers a seamless and reliable way to connect with the best electrical services in Sydney. With over 15 years of expertise, we take pride in providing transparent, high-quality services for residential and commercial needs.
 
-In the project directory, you can run:
+## Production Site
 
-### `npm start`
+[TERA Electrical Services](https://teraelectricalservices.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The project relies on the following key libraries and technologies:
 
-### `npm test`
+- React: For building dynamic and interactive user interfaces.
+- React Router: For handling seamless navigation and routing.
+- Tailwind CSS: For elegant and responsive design.
+- EmailJS: For efficient and secure form submissions.
+- Jest + React Testing Library: For ensuring code quality through comprehensive testing.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- Inquiry Form: Reach out to us for services with our easy-to-use contact form.
+- "Why Choose Us" Section: Learn about our expertise, transparent pricing, and excellent customer support.
+- Customer Testimonials: See what our satisfied clients have to say about our services.
+- Responsive Design: Enjoy a user-friendly experience across all devices.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Follow the steps below to set up the project on your local environment:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+`git clone https://github.com/mana12011207/TERA-electrical-services.git`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2.  Navigate into the project directory:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`cd TERA-electrical-services`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Install all the required NPM Packages:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`npm install`
 
-## Learn More
+4. Start the development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`npm start`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+1. Explore Services:
+   Access detailed information about our services through the homepage or dedicated sections for expertise, pricing, and support.
+2. Send an Inquiry:
+   Fill out the inquiry form with your details and requirements.
+   Expect prompt and professional responses.
+3. Testimonials:
+   Browse customer feedback to understand the quality of our work.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Contact us
 
-### Analyzing the Bundle Size
+Have questions or feedback? Feel Free to reach out:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Email: jmk35.1207@gmail.com
+-
