@@ -22,10 +22,12 @@ function Services() {
               className="object-cover object-center w-full h-32 md:min-h-64 lg:h-72"
             />
           </picture>
+          {/* Overlay text on the hero image */}
           <p className="absolute inset-0 flex items-center justify-center text-lg text-white bg-black bg-opacity-40 lg:text-3xl xl:text-5xl">
             Our Services
           </p>
         </div>
+        {/* Main section heading */}
         <div className="w-full px-10 py-8 mx-auto max-w-7xl">
           <h1 className="mt-6 text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
             Commercial and Residential
@@ -36,7 +38,7 @@ function Services() {
             If you have any questions, please feel free to contact us.
           </p>
 
-          {/* Services */}
+          {/* Services section: Displaying three service categories */}
           <div className="w-full grid-cols-3 mb-6 lg:grid lg:gap-6">
             <ServiceSection
               imgSrc="assets/images/repair-renewals.jpg"
@@ -71,7 +73,7 @@ function Services() {
             />
           </div>
 
-          {/* Start in 3 simple steps */}
+          {/* Steps section: Outlining the simple steps to start working with the service */}
           <div className="w-full">
             <h2 className="mt-16 text-2xl font-bold text-center lg:text-3xl xl:text-5xl">
               Start in 3 Simple Steps
@@ -152,6 +154,7 @@ function ServiceSection({ imgSrc, altText, title, items }) {
   return (
     <div className="mt-4">
       <div className="relative w-full">
+        {/* Service image with title */}
         <img
           src={imgSrc}
           alt={altText}
@@ -161,6 +164,7 @@ function ServiceSection({ imgSrc, altText, title, items }) {
           {title}
         </p>
       </div>
+      {/* List of service items */}
       <ul className="mt-2 text-sm tracking-wide text-gray-500 md:text-xl">
         {items.map((item, index) => (
           <li key={index} className="flex items-center">

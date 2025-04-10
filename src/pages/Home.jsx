@@ -4,8 +4,10 @@ import Testimonials from "../components/Testimonials";
 import EnquiryForm from "../components/EnquiryForm";
 
 function Home() {
+  // State to track whether the component is mounted, used for fade-in effect
   const [isMounted, setIsMounted] = useState(false);
 
+  // useEffect hook to set 'isMounted' to true once the component is mounted
   useEffect(() => {
     setIsMounted(true);
   }, []);
@@ -95,6 +97,7 @@ function Home() {
   );
 }
 
+// 'WhyChooseUs' component to display individual reasons to choose the service
 function WhyChooseUs({ imgSrc, altText, title, text, imgSrc2 }) {
   return (
     <div className="mt-2 rounded-lg ">

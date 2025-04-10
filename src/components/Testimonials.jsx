@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+// Data for customer reviews
 const reviews = [
   {
     name: "Jane H.",
@@ -29,17 +30,21 @@ const reviews = [
 ];
 
 function Testimonials() {
+  // State to keep track of the current review index
   const [currentIndex, setCurrentIndex] = useState(0);
 
+  // Function to move to the next review
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % reviews.length);
   };
 
+  // Automatically change to the next review every 3500ms (3.5 seconds)
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
     }, 3500);
 
+    // Cleanup the interval when the component is unmounted
     return () => clearInterval(interval);
   }, []);
 

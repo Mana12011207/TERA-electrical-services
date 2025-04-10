@@ -29,6 +29,7 @@ function Contact() {
             </p>
           </div>
 
+          {/* EnquiryForm */}
           <div className="flex flex-col items-center justify-center w-full px-10 py-8 mx-auto bg-gray-200 contact-page max-w-7xl">
             <h2 className="text-2xl font-bold text-center lg:text-3xl">
               Reach out TERA Electricians today

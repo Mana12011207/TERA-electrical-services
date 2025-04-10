@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { FaPlusCircle } from "react-icons/fa";
 import { FaMinusCircle } from "react-icons/fa";
 
+// List of FAQs with their respective questions and answers
 const faqs = [
   {
     question: "Are your electricians licensed and insured?",
@@ -40,9 +41,11 @@ const faqs = [
   },
 ];
 
+// State to track the visible FAQ answer based on the clicked question
 function FAQs() {
   const [visibleIndex, setVisibleIndex] = useState(null);
 
+  // Toggle the visibility of the FAQ answer when a question is clicked
   const toggleAnswer = (index) => {
     setVisibleIndex(visibleIndex === index ? null : index);
   };
@@ -72,7 +75,7 @@ function FAQs() {
           >
             {faq.answer}
           </p>
-          <hr className="border border-solid" />
+          <hr className="my-4 border-t border-gray-300 border-solid" />
         </div>
       ))}
     </div>

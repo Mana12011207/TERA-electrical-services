@@ -4,8 +4,12 @@ import "/Users/manamisumi/tera-electrical-services/src/enquiry.css";
 
 const EnquiryForm = () => {
   const form = useRef();
-  const [submitted, setSubmitted] = useState(false);
+  // useRef to reference the form element for submission.
 
+  const [submitted, setSubmitted] = useState(false);
+  // State to track if the form has been submitted.
+
+  // Function to handle form submission.
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -18,15 +22,17 @@ const EnquiryForm = () => {
       )
       .then(
         () => {
+          // Set submitted state to true if email is sent successfully.
           console.log("SUCCESS!");
           setSubmitted(true);
         },
         (error) => {
-          console.log("FAILED", error.text);
+          // Log error if email submission fails.
+          console.error("FAILED", error.text);
         }
       );
   };
-
+  // Function to reset the submission status when the user clicks anywhere.
   const handleKeyDown = (e) => {
     if (e.key === "Escape") {
       setSubmitted(false);
@@ -37,6 +43,7 @@ const EnquiryForm = () => {
     setSubmitted(false);
   };
 
+  // Effect to add and clean up event listeners for resetting form submission.
   useEffect(() => {
     if (submitted) {
       window.addEventListener("keydown", handleKeyDown);
@@ -45,12 +52,12 @@ const EnquiryForm = () => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("click", handleClick);
     }
-
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
       window.removeEventListener("click", handleClick);
     };
   }, [submitted]);
+  // Run the effect whenever the 'submitted' state changes.
 
   return (
     <div className="flex justify-center ">
@@ -69,14 +76,14 @@ const EnquiryForm = () => {
         >
           <div className="flex flex-col items-start ">
             <label
-              htmlFor="full-name"
+              htmlFor="name"
               className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Name
             </label>
             <input
               type="text"
-              name="name"
+              id="name"
               required
               placeholder="Full name"
               size="30"
@@ -85,14 +92,14 @@ const EnquiryForm = () => {
           </div>
           <div className="flex flex-col items-start">
             <label
-              htmlFor="full-name"
+              htmlFor="email"
               className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Email
             </label>
             <input
               type="email"
-              name="email"
+              id="email"
               placeholder="Email"
               size="30"
               className="w-full p-1 border rounded-md border-secondaryPrimary focus:outline-none focus:border-primary solid focus:border-4"
@@ -100,12 +107,13 @@ const EnquiryForm = () => {
           </div>
           <div className="flex flex-col items-start">
             <label
-              htmlFor="full-name"
+              htmlFor="phone"
               className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Phone
             </label>
             <input
+              id="phone"
               type="tel"
               name="phone"
               placeholder="Phone"
@@ -115,12 +123,13 @@ const EnquiryForm = () => {
           </div>
           <div className="flex flex-col items-start">
             <label
-              htmlFor="full-name"
+              htmlFor="address"
               className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Address
             </label>
             <input
+              id="address"
               type="text"
               name="address"
               placeholder="Home Address"
@@ -130,13 +139,13 @@ const EnquiryForm = () => {
           </div>
           <div className="flex flex-col items-start">
             <label
-              htmlFor="full-name"
+              htmlFor="message"
               className="block text-sm font-bold text-gray-700 xl:text-lg"
             >
               Enter Your Message Here
             </label>
             <textarea
-              type="text"
+              id="message"
               name="message"
               placeholder="Message"
               rows="5"

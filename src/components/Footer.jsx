@@ -3,6 +3,7 @@ import { BsFillTelephoneForwardFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
 function Footer() {
+  // Get the current year for the copyright statement
   const currentYear = new Date().getFullYear();
   return (
     <>

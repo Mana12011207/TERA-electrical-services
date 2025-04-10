@@ -6,8 +6,10 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 import { MdOutlineElectricalServices } from "react-icons/md";
 
 function Navbar() {
+  // State to toggle the menu visibility
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  // Function to toggle the menu on or off
   const toggleHamburgerMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
