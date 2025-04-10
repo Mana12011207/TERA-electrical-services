@@ -59,5 +59,5 @@ Follow the steps below to set up the project on your local environment:
 
 Have questions or feedback? Feel Free to reach out:
 
-- Email: jmk35.1207@gmail.com -
+- Email: jmk35.1207@gmail.com
 - [LinkedIn](https://www.linkedin.com/in/mana1207)
