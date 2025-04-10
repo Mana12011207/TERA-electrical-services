@@ -21,7 +21,7 @@ function Footer() {
           {/* Services */}
           <div className="flex flex-col items-center w-full mt-4 text-white 2xl:items-start">
             <p className="text-2xl font-bold lg:text-3xl">Services</p>
-            <ul className="flex flex-col items-center mt-2 text-lg xl:text-2xl 2xl:items-start">
+            <ul className="flex flex-col mt-2 text-lg xl:text-2xl 2xl:items-start">
               <li>Repair and Renewal</li>
               <li>Installation</li>
               <li>Inspection and Testing</li>
@@ -50,7 +50,9 @@ function Footer() {
           {/* CTA Button */}
           <div className="flex flex-col items-center w-full mt-4 text-white">
             <div>
-              <p className="text-2xl font-bold lg:text-3xl">Contact info</p>
+              <p className="text-2xl font-bold text-center lg:text-3xl">
+                Contact
+              </p>
               <button className="flex flex-col items-center justify-center mt-2 hover:text-secondaryAccent 2xl:flex-row">
                 <BsFillTelephoneForwardFill className="box-border p-1 text-2xl rounded-full text-secondaryPrimary bg-primaryAccent 2xl:text-3xl" />
                 <a
